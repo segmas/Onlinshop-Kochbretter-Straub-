@@ -15,12 +15,12 @@
 
 
         <!--Rabatt Code-->
-        {% if block.type == "infobanner_rabattcode_paragraph" %}
-            <p>{{ block.settings.infobanner_rabattcode_paragraph }}</p>
+        {% if block.type == "infobanner_rabattcode" %}
+            <p>{{ block.settings.rabattcode_paragraph }}</p>
         {% endif %}
 
 
-        
+
 
     {% endfor %}
 
@@ -57,13 +57,13 @@
                 ]
             },
             {
-                "name": "Infobanner Rabattcode",
+                "name": "Info Banner Rabattcode",
                 "type": "infobanner_rabattcode",
                 "settings": [
                     {
                         "type": "text",
-                        "id": "infobanner_rabattcode_paragraph",
-                        "label": "Infobanner Rabattcode Text"
+                        "id": "rabattcode_paragraph",
+                        "label": "Info Banner Rabattcode"
                     }
                 ]
             }
