@@ -14,7 +14,7 @@
                 <img class="slidesIMG_phone" src="{{ block.settings.slider_img_phone | image_url }}"   style="width: 100%;" alt="Bildbeschreibung">
             </picture>
           {% endif %}  
-          <div class="slidetextdiv">
+          <div class="slidetextdiv" id="slidetextdiv-{{ forloop.index }}">
             <h3 >{{ block.settings.slider_titel }}</h3>
             <p class="Desktopansichttexte">
                 {{ block.settings.slider_text }}
@@ -643,6 +643,18 @@ setInterval(() => {
 
   border-radius: 10px;
 }
+#slidetextdiv-1 {
+    top: 10%;
+}
+
+#slidetextdiv-2 {
+    top: 0%;
+}
+
+#slidetextdiv-3 {
+    top: 30%;
+}
+
 
 .slides.active .slidetextdiv {
   transform: translateY(0);
