@@ -59,7 +59,7 @@
         "infobanner_titel_mUYEYR": {
           "type": "infobanner_titel",
           "settings": {
-            "infobanner_title_text": "Rabatt für dein Weihnachtsgeschenk",
+            "infobanner_title_text": "10 CHF Rabatt für dein Weihnachtsgeschenk",
             "infobanner_title_text_size": 4
           }
         },
@@ -72,7 +72,7 @@
         "infobanner_rabattcode_jNHCHV": {
           "type": "infobanner_rabattcode",
           "settings": {
-            "rabattcode_paragraph": ""
+            "rabattcode_paragraph": "mit dem Code :  KOCHBRETTER10"
           }
         }
       },
