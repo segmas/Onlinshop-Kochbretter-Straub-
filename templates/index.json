@@ -45,11 +45,23 @@
             "slider_url_link": "shopify://pages/messen-und-weihnachtsmarkt",
             "slider_btn_text": ""
           }
+        },
+        "slider_blocks_xYCagy": {
+          "type": "slider_blocks",
+          "settings": {
+            "slider_img": "shopify://shop_images/IMG_9204_1.webp",
+            "slider_titel": "Gravuren",
+            "slider_text": "",
+            "slider_text_phone": "",
+            "slider_url_link": "shopify://pages/gravuren",
+            "slider_btn_text": ""
+          }
         }
       },
       "block_order": [
         "slider_blocks_PNkN3k",
-        "slider_blocks_WPLQJk"
+        "slider_blocks_WPLQJk",
+        "slider_blocks_xYCagy"
       ],
       "custom_css": [
         "#SliderTiteleins {left: 13rem;}",
