@@ -23,6 +23,47 @@
     },
     "img_slider_Bn3EC8": {
       "type": "ImgSlider",
+      "blocks": {
+        "slider_blocks_PNkN3k": {
+          "type": "slider_blocks",
+          "settings": {
+            "slider_img": "shopify://shop_images/IMG_4201.webp",
+            "slider_titel": "Individuelle Kochbretter",
+            "slider_text": "",
+            "slider_text_phone": "",
+            "slider_url_link": "https://konfigurator.kochbretterstraub.ch/",
+            "slider_btn_text": "Jetzt selber gestalten"
+          }
+        },
+        "slider_blocks_WPLQJk": {
+          "type": "slider_blocks",
+          "settings": {
+            "slider_img": "shopify://shop_images/markt4_2_c8cb1215-0541-4671-9724-63b67fd78a89.jpg",
+            "slider_titel": "Weihnachtsmarkt 2024",
+            "slider_text": "",
+            "slider_text_phone": "",
+            "slider_url_link": "shopify://pages/messen-und-weihnachtsmarkt",
+            "slider_btn_text": "mehr erfahren"
+          }
+        },
+        "slider_blocks_xYCagy": {
+          "type": "slider_blocks",
+          "settings": {
+            "slider_img": "shopify://shop_images/IMG_9204_1.webp",
+            "slider_img_phone": "shopify://shop_images/flaschenoeffner_90a3745b-4cea-4885-bccc-de8ddbf499cd.webp",
+            "slider_titel": "Gravuren",
+            "slider_text": "",
+            "slider_text_phone": "",
+            "slider_url_link": "shopify://pages/gravuren",
+            "slider_btn_text": "mehr erfahren"
+          }
+        }
+      },
+      "block_order": [
+        "slider_blocks_PNkN3k",
+        "slider_blocks_WPLQJk",
+        "slider_blocks_xYCagy"
+      ],
       "custom_css": [
         "#SliderTiteleins {left: 13rem;}",
         "#SliderTitelzwei {left: 14%; bottom: 20%;}",
@@ -32,25 +73,7 @@
       ],
       "settings": {
         "SpanUrlLinkleft": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/SpanLeft.webp?v=1719988018",
-        "SpanUrlLinkRight": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/SpanRight.webp?v=1719988018",
-        "slidertitel1": "Individuelle Kochbretter",
-        "slidertitel2": "Gravuren",
-        "slidertitel3": "Weihnachtsmarkt 2024",
-        "slidertext1": "",
-        "slidertext2": "Wir gravieren Ihre Logos.",
-        "slidertext3": "",
-        "sliderbild1": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_4201.webp?v=1718373038",
-        "sliderbild2": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_9204_1.webp?v=1718380059",
-        "sliderbild3": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/markt4_2_c8cb1215-0541-4671-9724-63b67fd78a89.jpg?v=1726599956",
-        "sliderbutton1": "Jetzt selbst gestalten",
-        "sliderbutton2": "mehr erfahren",
-        "sliderbutton3": "mehr erfahren",
-        "sliderbuttonlink1": "https://konfigurator.kochbretterstraub.ch/",
-        "sliderbuttonlink2": "shopify://pages/gravuren",
-        "sliderbuttonlink3": "shopify://pages/messen-und-weihnachtsmarkt",
-        "slidertexthandyansicht1": "",
-        "slidertexthandyansicht2": "",
-        "slidertexthandyansicht3": ""
+        "SpanUrlLinkRight": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/SpanRight.webp?v=1719988018"
       }
     },
     "new_info_banner_3er87g": {
