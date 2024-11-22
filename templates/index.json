@@ -63,23 +63,23 @@
             "infobanner_title_text_size": 4
           }
         },
-        "infobanner_text_aijRh7": {
-          "type": "infobanner_text",
-          "settings": {
-            "infobanner_paragraph_text": "Gültig bis zum 20 .Dezember 2024"
-          }
-        },
         "infobanner_rabattcode_jNHCHV": {
           "type": "infobanner_rabattcode",
           "settings": {
             "rabattcode_paragraph": "mit dem Code :  KOCHBRETTER10"
           }
+        },
+        "infobanner_text_aijRh7": {
+          "type": "infobanner_text",
+          "settings": {
+            "infobanner_paragraph_text": "Gültig bis zum 20 .Dezember 2024"
+          }
         }
       },
       "block_order": [
         "infobanner_titel_mUYEYR",
-        "infobanner_text_aijRh7",
-        "infobanner_rabattcode_jNHCHV"
+        "infobanner_rabattcode_jNHCHV",
+        "infobanner_text_aijRh7"
       ],
       "settings": {
         "new_info_banner_width": 70,
