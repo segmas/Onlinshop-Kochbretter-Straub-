@@ -5,7 +5,7 @@
 
         <!--Titel-->
         {% if block.type == "infobanner_titel" %}
-            <h2>{{ block.settings.infobanner_title_text }}</h2>
+            <h2 class="infobanner_title_text">{{ block.settings.infobanner_title_text }}</h2>
         {% endif %}
 
         <!--Text-->
@@ -55,6 +55,11 @@
                 "type": "color",
                 "id": "new_info_banner_backgroundcolor",
                 "label": "Info Banner Backgroundcolor"
+            },
+            {
+                "type": "color",
+                "id": "new_info_banner_color",
+                "label": "Info Banner Color"
             }
         ],
         "blocks": [
@@ -66,6 +71,15 @@
                         "type": "text",
                         "id": "infobanner_title_text",
                         "label": "Info Banner Title"
+                    },
+                    {
+                        "type": "range",
+                        "id": "infobanner_title_text_size",
+                        "label": "Infobanner Titel Text Size",
+                        "max": 10,
+                        "min": 1,
+                        "step": 0.1,
+                        "default": 2.5
                     }
                 ]
             },
@@ -115,14 +129,22 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        
+        gap: 2rem;
 
         padding-left: 2rem;
         padding-right: 2rem;
+
+        margin-top: 3rem;
+        margin-bottom: 3rem;
 
         padding-top: {{ section.settings.new_info_banner_padding_top_bottom }}rem;
         padding-bottom: {{ section.settings.new_info_banner_padding_top_bottom }}rem;
 
         background-color: {{ section.settings.new_info_banner_backgroundcolor }};
+
+       color: {{ section.settings.new_info_banner_color }};
         
         width: {{ section.settings.new_info_banner_width }}%;
 
@@ -130,6 +152,10 @@
         margin-right: auto;
     }
 
+    /*Titel*/
+    .infobanner_title_text{
+        font-size: {{ block.settings.infobanner_title_text_size }}rem;
+    }
 
 
 </style>
