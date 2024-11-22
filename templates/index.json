@@ -65,6 +65,7 @@
         },
         "infobanner_rabattcode_jNHCHV": {
           "type": "infobanner_rabattcode",
+          "disabled": true,
           "settings": {
             "rabattcode_paragraph": "mit dem Code :  KOCHBRETTER10"
           }
