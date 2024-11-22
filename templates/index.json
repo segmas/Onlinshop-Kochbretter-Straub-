@@ -59,8 +59,7 @@
         "infobanner_titel_mUYEYR": {
           "type": "infobanner_titel",
           "settings": {
-            "infobanner_title_text": "10 CHF Rabatt für ihr Weihnachtsgeschenk",
-            "infobanner_title_text_size": 6
+            "infobanner_title_text": "10 CHF Rabatt für ihr Weihnachtsgeschenk"
           }
         },
         "infobanner_rabattcode_jNHCHV": {
@@ -95,7 +94,8 @@
         "new_info_banner_width": 76,
         "new_info_banner_padding_top_bottom": 5,
         "new_info_banner_backgroundcolor": "#970001",
-        "new_info_banner_color": "#ffffff"
+        "new_info_banner_color": "#ffffff",
+        "infobanner_title_text_size": 6
       }
     },
     "featured_collection": {
