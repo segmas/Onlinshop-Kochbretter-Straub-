@@ -1,0 +1,723 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+
+
+
+
+
+
+
+{%- style -%}
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+}
+
+@media screen and (min-width: 750px) {
+.section-{{ section.id }}-padding {
+padding-top: {{ section.settings.padding_top }}px;
+padding-bottom: {{ section.settings.padding_bottom }}px;
+}
+}
+{%- endstyle -%}
+
+<style>
+
+:root{
+  --kontaktdivbackgroundcolor: rgb(20, 20, 20);
+}
+
+
+
+  #Kontaktdiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+
+    max-width: 1400px;
+    height: 50rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+  }
+  #firstkontaktdivunterdiv{
+    gap: 4rem;
+    background-color: var(--kontaktdivbackgroundcolor);
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 0%;
+  }
+  #secondkontaktdivunterdiv{
+  }
+  #KontaktTitel{
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .kontaktdivunterdivs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+  }
+  /*linkskontakt*/
+  #linkskontakt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 60%;
+
+    gap: 1rem;
+  }
+  .linkskontaktdivAtags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.85rem;
+  }
+  .LinksImgs{
+    width: 3.5rem;
+    padding-right: 1rem;
+  }
+
+  /*Socialdivkontakt*/
+  #Socialdivkontakt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 60%;
+
+    gap: 1rem;
+  }
+  #folgtunstitel{
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: white;
+  }
+  #Socialsoberdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    gap: 2rem;
+  }
+  .LinksSocialtag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    font-size: 1.85rem;
+  }
+
+  /*Latop Ansicht*/
+  @media(max-width: 1600px){
+    #Kontaktdiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+
+    max-width: 82%;
+    height: 43rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+  }
+  #firstkontaktdivunterdiv{
+    gap: 3rem;
+    background-color: var(--maincolor);
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 0%;
+  }
+  #secondkontaktdivunterdiv{
+  }
+  #KontaktTitel{
+    color: white;
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+
+  .kontaktdivunterdivs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+  }
+  /*linkskontakt*/
+  #linkskontakt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 60%;
+
+    gap: 1rem;
+  }
+  .linkskontaktdivAtags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+  }
+  .LinksImgs{
+    width: 3.2rem;
+    padding-right: 1rem;
+  }
+
+  /*Socialdivkontakt*/
+  #Socialdivkontakt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 60%;
+
+    gap: 1rem;
+  }
+  #folgtunstitel{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  #Socialsoberdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    gap: 2rem;
+  }
+  .LinksSocialtag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.75rem;
+  }
+
+  }
+
+
+  /*Tablet ansicht*/
+  @media(min-width: 500px) and (max-width: 950px){
+    #Kontaktdiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+
+    max-width: 90%;
+    height: 49rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+  }
+  #firstkontaktdivunterdiv{
+    gap: 3rem;
+    background-color: var(--maincolor);
+    border-top-left-radius: 5%;
+    border-bottom-right-radius: 0%;
+  }
+  #secondkontaktdivunterdiv{
+  }
+  #KontaktTitel{
+    color: white;
+    font-size: 2.8rem;
+    font-weight: bold;
+  }
+
+  .kontaktdivunterdivs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    height: 100%;
+
+    overflow: hidden;
+  }
+  /*linkskontakt*/
+  #linkskontakt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 80%;
+
+    gap: 2.4rem;
+  }
+  .linkskontaktdivAtags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+  }
+  .LinksImgs{
+    width: 3.2rem;
+    padding-right: 1rem;
+  }
+
+  /*Socialdivkontakt*/
+  #Socialdivkontakt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 80%;
+
+    gap: 1rem;
+  }
+  #folgtunstitel{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  #Socialsoberdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    gap: 2rem;
+  }
+  .LinksSocialtag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.65rem;
+  }
+
+  }
+
+
+  @media(max-width: 500px){
+    #Kontaktdiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column-reverse;
+
+    max-width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+
+  }
+  #firstkontaktdivunterdiv{
+    gap: 2rem;
+    background-color: var(--maincolor);
+    border-top-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+  }
+  #secondkontaktdivunterdiv{
+    
+  }
+  #KontaktTitel{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .kontaktdivunterdivs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+  }
+  /*linkskontakt*/
+  #linkskontakt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 80%;
+
+    gap: 2rem;
+  }
+  .linkskontaktdivAtags{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+  }
+  .LinksImgs{
+    width: 3.2rem;
+    padding-right: 1rem;
+  }
+
+  /*Socialdivkontakt*/
+  #Socialdivkontakt{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 80%;
+
+    gap: 1rem;
+
+    padding-bottom: 2rem;
+
+  }
+  #folgtunstitel{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+  }
+  #Socialsoberdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    gap: 2rem;
+  }
+  .LinksSocialtag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.45rem;
+
+  }
+
+  
+  }
+
+
+
+  /*-----------*/
+  
+
+
+
+
+</style>
+
+
+
+
+<div id="Kontaktdiv">
+
+  <div id="firstkontaktdivunterdiv" class="kontaktdivunterdivs">
+
+  <h2 id="KontaktTitel" >Kontakt</h2>
+
+    <div id="linkskontakt">
+      <a class="linkskontaktdivAtags" href={{section.settings.mailadressemailto}}>
+        <img class="LinksImgs" src="https://cdn.shopify.com/s/files/1/0759/8152/1196/files/mail_48dp_FILL0_wght400_GRAD0_opsz48w.webp?v=1717835663" alt="">
+        {{section.settings.mailadressetext}}</a>
+        <!--
+      <a class="linkskontaktdivAtags" href={{section.settings.WhatsAppLink}}>
+        <img class="LinksImgs" src="https://cdn.shopify.com/s/files/1/0759/8152/1196/files/whatsapp11w.webp?v=1717835662"  alt="">
+      {{section.settings.WhatsAppText}}</a>
+      -->
+    </div>
+
+
+    <div id="Socialdivkontakt">
+
+      <h3 id="folgtunstitel">FOLGT UNS</h3>
+
+      <div id="Socialsoberdiv">
+        <a class="LinksSocialtag" href="{{section.settings.YouTubeLink}}">
+          <img class="LinksImgs" src="https://cdn.shopify.com/s/files/1/0759/8152/1196/files/youtube_1_w.webp?v=1717835662" alt="">You Tube</a>
+        <a class="LinksSocialtag" href="{{section.settings.InstagramLink}}">
+          <img class="LinksImgs" src="https://cdn.shopify.com/s/files/1/0759/8152/1196/files/instagramw.webp?v=1717835662" alt="">Instagram</a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div id="secondkontaktdivunterdiv" class="kontaktdivunterdivs">
+
+
+
+
+    <div style="width: 92%;" class="color-{{ section.settings.color_scheme }} gradient">
+      <div style="width: 100%;" class="contact page-width page-width--narrow section-{{ section.id }}-padding">
+        {%- if section.settings.heading != blank -%}
+        <h2
+          class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+          {{ section.settings.heading }}
+        </h2>
+        {%- else -%}
+        <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+        {%- endif -%}
+        {%- liquid
+        assign contact_form_class = 'isolate'
+        if settings.animations_reveal_on_scroll
+        assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
+        endif
+        -%}
+        {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+        {%- if form.posted_successfully? -%}
+        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+          {% render 'icon-success' %}
+          {{ 'templates.contact.form.post_success' | t }}
+        </h2>
+        {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+            {% render 'icon-error' %}
+            {{ 'templates.contact.form.error_heading' | t }}
+          </h2>
+        </div>
+        <ul class="form-status-list caption-large" role="list">
+          <li>
+            <a href="#ContactForm-email" class="link">
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+            </a>
+          </li>
+        </ul>
+        {%- endif -%}
+        <div class="contact__fields">
+          <div class="field">
+            <input class="field__input" autocomplete="name" type="text" id="ContactForm-name"
+              name="contact[{{ 'templates.contact.form.name' | t }}]"
+              value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+              placeholder="{{ 'templates.contact.form.name' | t }}">
+            <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
+          </div>
+          <div class="field field--with-error">
+            <input autocomplete="email" type="email" id="ContactForm-email" class="field__input" name="contact[email]"
+              spellcheck="false" autocapitalize="off"
+              value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+              aria-required="true" {% if form.errors contains 'email' %} aria-invalid="true"
+              aria-describedby="ContactForm-email-error" {% endif %}
+              placeholder="{{ 'templates.contact.form.email' | t }}">
+            <label class="field__label" for="ContactForm-email">
+              {{- 'templates.contact.form.email' | t }}
+              <span aria-hidden="true">*</span></label>
+            {%- if form.errors contains 'email' -%}
+            <small class="contact__field-error" id="ContactForm-email-error">
+              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+              <span class="form__message">
+                {%- render 'icon-error' -%}
+                {{- form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email -}}
+              </span>
+            </small>
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="field">
+          <textarea rows="10" id="ContactForm-body" class="text-area field__input"
+            name="contact[{{ 'templates.contact.form.comment' | t }}]"
+            placeholder="{{ 'templates.contact.form.comment' | t }}">
+          {{- form.body -}}
+        </textarea>
+          <label class="form__label field__label" for="ContactForm-body">
+            {{- 'templates.contact.form.comment' | t -}}
+          </label>
+        </div>
+        <div class="contact__button">
+          <button style="width: 100%; background-color: var(--maincolor); font-size: 1.7rem;" type="submit" class="button">
+            {{ 'templates.contact.form.send' | t }}
+          </button>
+        </div>
+        {%- endform -%}
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+{
+"name": "t:sections.contact-form.name",
+"tag": "section",
+"class": "section",
+"disabled_on": {
+"groups": ["header", "footer"]
+},
+"settings": [
+  {
+    "type": "text",
+    "label": "Mail-Adresse",
+    "id": "mailadressetext"
+  },
+  {
+    "type": "text",
+    "label": "Mail-Adresse Mailto",
+    "id": "mailadressemailto"
+  },
+  {
+    "type": "text",
+    "label": "Whats App Text",
+    "id": "WhatsAppText"
+  },
+  {
+    "type": "text",
+    "label": "Whats App Link",
+    "id": "WhatsAppLink"
+  },
+
+
+  {
+    "type": "url",
+    "label": "YouTube Link",
+    "id": "YouTubeLink"
+  },
+  {
+    "type": "url",
+    "label": "instagram Link",
+    "id": "InstagramLink"
+  },
+
+
+
+
+{
+"type": "inline_richtext",
+"id": "heading",
+"default": "Contact form",
+"label": "Heading"
+},
+{
+"type": "select",
+"id": "heading_size",
+"options": [
+{
+"value": "h2",
+"label": "t:sections.all.heading_size.options__1.label"
+},
+{
+"value": "h1",
+"label": "t:sections.all.heading_size.options__2.label"
+},
+{
+"value": "h0",
+"label": "t:sections.all.heading_size.options__3.label"
+}
+],
+"default": "h1",
+"label": "t:sections.all.heading_size.label"
+},
+{
+"type": "color_scheme",
+"id": "color_scheme",
+"label": "t:sections.all.colors.label",
+"default": "scheme-1"
+},
+{
+"type": "header",
+"content": "t:sections.all.padding.section_padding_heading"
+},
+{
+"type": "range",
+"id": "padding_top",
+"min": 0,
+"max": 100,
+"step": 4,
+"unit": "px",
+"label": "t:sections.all.padding.padding_top",
+"default": 36
+},
+{
+"type": "range",
+"id": "padding_bottom",
+"min": 0,
+"max": 100,
+"step": 4,
+"unit": "px",
+"label": "t:sections.all.padding.padding_bottom",
+"default": 36
+}
+],
+"presets": [
+{
+"name": "t:sections.contact-form.presets.name"
+}
+]
+}
+{% endschema %}

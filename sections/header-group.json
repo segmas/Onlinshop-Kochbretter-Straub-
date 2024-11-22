@@ -1,0 +1,52 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "oberheader_Q4nE63": {
+      "type": "oberheader",
+      "custom_css": [],
+      "settings": {
+        "oberheadertitel1": "Versandkostenfrei ab 150 CHF",
+        "oberheadertitel2": "Swiss Made Handgefertigt",
+        "oberheadertitel3": "CH Versand 1-2 Werktage",
+        "oberheaderbild1": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/Versandkosten.webp?v=1717765411",
+        "oberheaderbild2": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/MADESWISS.png?v=1699994064",
+        "oberheaderbild3": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/Versand.webp?v=1717765411"
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+        "@media (max-width: 500px) {.header {padding-bottom: 0.7rem; padding-top: 0.7rem; } .header__heading-logo {width: 16.2rem; max-width: auto; } #cartimg {width: 27px; }}"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "main-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "always",
+        "show_line_separator": false,
+        "color_scheme": "scheme-1",
+        "menu_color_scheme": "scheme-1",
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 4,
+        "padding_bottom": 4
+      }
+    }
+  },
+  "order": [
+    "oberheader_Q4nE63",
+    "header"
+  ]
+}

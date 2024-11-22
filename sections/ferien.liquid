@@ -1,0 +1,211 @@
+<!--HTML-->
+<div id="ferien-section">
+        <!--X BTN-->
+        <span id="ferien-section-xbtn" class="material-symbols-outlined">
+            close
+        </span>
+
+        <h3 id="titel-ferien">
+            {{ section.settings.titel-ferien }}
+        </h3>
+        <p id="text-ferien">
+            {{ section.settings.text-ferien }}
+        </p>
+</div>
+
+
+<script>
+    const feriensectionxbtn = document.getElementById("ferien-section-xbtn"); //XBTN
+    const feriensection = document.getElementById("ferien-section") //ferien-sectio
+
+    feriensectionxbtn.addEventListener("click", () =>{
+        feriensection.style.display = "none";
+    })
+</script>
+
+
+
+
+<!--Schema-->
+{% schema %}
+    {
+        "name": "ferien-section",
+        "settings": [
+            {
+                "type": "range",
+                "id": "info-width",
+                "label": "Info Width",
+                "max": 100,
+                "min": 50,
+                "step": 5,
+                "default": 50
+            },
+            {
+                "type": "range",
+                "id": "info-height",
+                "label": "Info Height",
+                "max": 100,
+                "min": 50,
+                "step": 5,
+                "default": 50
+            },
+            {
+                "type": "range",
+                "id": "info-width-handy",
+                "label": "Info Width-handy",
+                "max": 100,
+                "min": 50,
+                "step": 5,
+                "default": 50
+            },
+            {
+                "type": "range",
+                "id": "info-height-handy",
+                "label": "Info Height-handy",
+                "max": 100,
+                "min": 50,
+                "step": 5,
+                "default": 50
+            },
+            {
+                "type": "text",
+                "label": "titel Ferien",
+                "id": "titel-ferien"
+            },
+            {
+                "type": "text",
+                "label": "text Ferien",
+                "id": "text-ferien"
+            }
+        ],
+        "presets": [
+            {
+                "name": "ferien"
+            }
+        ]
+    }
+{% endschema %}
+
+
+<!--CSS-->
+<style>
+    #ferien-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: {{ section.settings.info-width }}%;
+        height: {{ section.settings.info-height }}%;
+
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.65);
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+    #titel-ferien{
+        font-size: 2.6rem;
+        width: 100%;
+        height: 25%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    #text-ferien{
+        font-size: 1.95rem;
+        width: 100%;
+        height: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: rgb(255, 255, 255);
+
+        text-align: center;
+        font-weight: bold;
+    }
+    #ferien-section-xbtn{
+       width: 100%;
+       height: 25%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        color: white;
+        font-size: 3.5rem;
+        cursor: pointer;
+    }
+
+    /*Handy Ansicht*/
+    @media(max-width: 950px){
+        #ferien-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: {{ section.settings.info-width-handy }}%;
+        height: {{ section.settings.info-height-handy }}%;
+
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.65);
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1000;
+    }
+    #titel-ferien{
+        font-size: 2rem;
+        width: 100%;
+        height: 25%;
+
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    #text-ferien{
+        font-size: 1.65rem;
+        width: 100%;
+        height: 60%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        color: rgb(255, 255, 255);
+
+        text-align: center;
+        font-weight: bold;
+    }
+    #ferien-section-xbtn{
+       width: 100%;
+       height: 15%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        color: white;
+        font-size: 3rem;
+        cursor: pointer;
+    }    
+    }
+    
+</style>

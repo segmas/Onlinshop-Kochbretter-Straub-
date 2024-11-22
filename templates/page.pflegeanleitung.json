@@ -1,0 +1,184 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_X3LqA4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pGY86z": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Pflegeanleitung</strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pGY86z"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multirow_DVYzBW": {
+      "type": "multirow",
+      "blocks": {
+        "row_WA4ctM": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1224_1.jpg",
+            "caption": "",
+            "heading": "<strong>1.Schritt</strong>",
+            "text": "<p>Bitte reinigen Sie das Kochbrett gründlich und lassen Sie es vollständig trocknen.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_tziBbx": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1197_1_cc313ee6-45a2-46c7-812c-8c77fd2efa62.jpg",
+            "caption": "",
+            "heading": "<strong>2.Schritt</strong>",
+            "text": "<p>Tragen Sie Öl auf die Oberfläche des Bretts auf und verteilen Sie es gleichmäßig mit einem Tuch oder einem Schwamm, um alle Bereiche abzudecken.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_UJLEhU": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1099_3.jpg",
+            "caption": "",
+            "heading": "<strong>3.Schritt</strong>",
+            "text": "<p>Lassen Sie das Öl für einige Stunden in das Brett einziehen.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_jYEPGF": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1277_1.jpg",
+            "caption": "",
+            "heading": "<strong>4.Schritt</strong>",
+            "text": "<p>Nehmen Sie ein sauberes Tuch oder Papiertuch und wischen Sie vorsichtig über die Oberfläche, um überschüssiges Öl zu entfernen. Lassen Sie es nachher weitere Stunden trocken.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_b8Eikd": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1207_1.jpg",
+            "caption": "",
+            "heading": "<strong>5.Schritt</strong>",
+            "text": "<p>Nach dem Einölen des Bretts können Sie es nach Gebrauch einfach mit Wasser abspülen. Vermeiden Sie scharfe Reinigungsmittel oder das Einweichen des Bretts in Wasser.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_WA4ctM",
+        "row_tziBbx",
+        "row_UJLEhU",
+        "row_jYEPGF",
+        "row_b8Eikd"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "small",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "align-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "kontakt_dHDfGf": {
+      "type": "kontakt",
+      "settings": {
+        "slidertitel1": ""
+      }
+    },
+    "scroltop_gkQMPz": {
+      "type": "scroltop",
+      "settings": {}
+    },
+    "rich_text_rEbLdh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NnwgrV": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>NO-GOS</strong>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NnwgrV"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_EqLqzn": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "#PflegeDiv {display: flex; align-items: center; justify-content: center; max-width: 1300px; margin-left: auto; margin-right: auto;}",
+        "#PfelegunterDivID {width: 20%;}",
+        "#PflegeunterdivText {width: 60%;}",
+        "li {color: black; margin-bottom: 1.7rem; text-align: center;}",
+        "@media (max-width: 950px) {#PflegeDiv {flex-direction: column; } ul {margin: 0rem; padding: 0rem 3.3rem; } li {color: black; margin-bottom: 1.1rem; } #PfelegunterDivID {width: 100%; display: flex; justify-content: center; } #PflegeunterdivText {width: 100%; }}"
+      ],
+      "settings": {
+        "custom_liquid": "<div id=\"PflegeDiv\">\n\n\n    <div class=\"PflegunterDiv\" id=\"PflegeunterdivText\">\n        <ul>\n            <li>Kochbretter nicht in der Spülmaschine reinigen.</li>\n            <li>nicht in Wasser eintauchen oder einweichen.</li>\n            <li>hartnäckige Gerüche, bspw. von Zwiebeln oder Knoblauch lassen sich durch einreiben mit einer halben Zitrone oder weissem Essig entfernen.</li>\n            <li>vermeiden Sie scharfe Reinigungsmittel. Reinigung mit einem feuchten Tuch und etwas milder Seife, danach abtrocknen und hinstellen.</li>\n        </ul>\n    </div>\n\n\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "rich_text_X3LqA4",
+    "main",
+    "multirow_DVYzBW",
+    "kontakt_dHDfGf",
+    "scroltop_gkQMPz",
+    "rich_text_rEbLdh",
+    "custom_liquid_EqLqzn"
+  ]
+}

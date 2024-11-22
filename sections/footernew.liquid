@@ -1,0 +1,365 @@
+<div id="newfooterdiv">
+
+    <div id="logofooterdiv" class="footerdivs">
+        <img id="logofooterBild" src={{section.settings.footerimgsrc}} alt="">
+    </div>
+
+    <div class="footerdivs">
+        <h3>Sortiment</h3>
+        <a href="{{section.settings.linksortimenmenu1}}">{{section.settings.Sortimentmenu1}}</a>
+        <a href="{{section.settings.linksortimenmenu2}}">{{section.settings.Sortimentmenu2}}</a>
+        <a href="{{section.settings.linksortimenmenu3}}">{{section.settings.Sortimentmenu3}}</a>
+        <a href="{{section.settings.linksortimenmenu4}}">{{section.settings.Sortimentmenu4}}</a>
+        <a href="{{section.settings.linksortimenmenu5}}">{{section.settings.Sortimentmenu5}}</a>
+    </div>
+
+    <div class="footerdivs">
+        <h3>Rechtliches</h3>
+        <a href="{{section.settings.ImpressumURLlink}}">Impressum</a>
+        <a href="{{section.settings.ZahlungVersandURLlink}}">Versand/Zahlung</a>
+        <a href="{{section.settings.DatenschutzerklarungURLlink}}">Datenschuterklärung</a>
+        <a href="{{section.settings.AGBsURLlink}}">AGBs</a>
+    </div>
+
+    <div class="footerdivs">
+        <h3>Gut zu Wissen</h3>
+        <a href="{{section.settings.GutZuWissenURLLINK1}}">{{section.settings.GutZuWissen1}}</a>
+        <a href="{{section.settings.GutZuWissenURLLINK2}}">{{section.settings.GutZuWissen2}}</a>
+    </div>
+
+    <div class="footerdivs">
+        <h3>Kontakt</h3>
+        <a id="Maillinkfooter" href="mailto:shop@kochbretterstraub.ch">
+            <span style="padding-right: 0.3rem;" class="material-symbols-outlined">
+                mail
+            </span>shop@kochbretterstraub.ch</a>
+            <!--
+        <a id="whatsappkontaktfooter" href="">
+            <img style="padding-right: 0.4rem;" width="25rem"
+                src="https://cdn.shopify.com/s/files/1/0842/6959/7012/files/whatsapp.png?v=1717174026" alt="">
+            Whats App Mo - Sa (7Uhr - 20Uhr)
+        </a>
+        -->
+    </div>
+
+</div>
+
+
+
+    {% schema %}
+    {
+        "name": "FooterNeW",
+        "settings": [
+                {
+                    "type": "text",
+                    "label": "Bild SRC footer",
+                    "id": "footerimgsrc"
+                },
+                
+
+                {
+                    "type": "text",
+                    "label": "Sortimentmenu1",
+                    "id": "Sortimentmenu1"
+                },
+                {
+                    "type": "url",
+                    "label": "linksortimenmenu1",
+                    "id": "linksortimenmenu1"
+                },
+
+                {
+                    "type": "text",
+                    "label": "Sortimentmenu2",
+                    "id": "Sortimentmenu2"
+                },
+                {
+                    "type": "url",
+                    "label": "linksortimenmenu2",
+                    "id": "linksortimenmenu2"
+                },
+
+                
+                {
+                    "type": "text",
+                    "label": "Sortimentmenu3",
+                    "id": "Sortimentmenu3"
+                },
+                {
+                    "type": "url",
+                    "label": "linksortimenmenu3",
+                    "id": "linksortimenmenu3"
+                },
+
+                {
+                    "type": "text",
+                    "label": "Sortimentmenu4",
+                    "id": "Sortimentmenu4"
+                },
+                {
+                    "type": "url",
+                    "label": "linksortimenmenu4",
+                    "id": "linksortimenmenu4"
+                },
+                
+                {
+                    "type": "text",
+                    "label": "Sortimentmenu5",
+                    "id": "Sortimentmenu5"
+                },
+                {
+                    "type": "url",
+                    "label": "linksortimenmenu5",
+                    "id": "linksortimenmenu5"
+                },
+
+               
+                {
+                    "type": "url",
+                    "label": "ImpressumURLlink",
+                    "id": "ImpressumURLlink"
+                },
+                {
+                    "type": "url",
+                    "label": "ZahlungVersandURLlink",
+                    "id": "ZahlungVersandURLlink"
+                },
+                {
+                    "type": "url",
+                    "label": "DatenschutzerklarungURLlink",
+                    "id": "DatenschutzerklarungURLlink"
+                },
+                {
+                    "type": "url",
+                    "label": "AGBsURLlink",
+                    "id": "AGBsURLlink"
+                },
+
+
+                {
+                    "type": "text",
+                    "id": "GutZuWissen1",
+                    "label": "GutZuWissen1"
+                },
+                {
+                    "type": "url",
+                    "label": "GutZuWissenURLLINK1",
+                    "id": "GutZuWissenURLLINK1"
+                },
+                {
+                    "type": "text",
+                    "id": "GutZuWissen2",
+                    "label": "GutZuWissen2"
+                },
+                {
+                    "type": "url",
+                    "label": "GutZuWissenURLLINK2",
+                    "id": "GutZuWissenURLLINK2"
+                }
+
+
+
+
+        ],
+            "presets": [
+                {
+                    "name": "FooterNeW",
+                    "category": "footer"
+                }
+            ]
+    }
+    {% endschema %}
+
+
+<!--Styles Einstellungen-->
+<style>
+    #newfooterdiv {
+        max-width: 1600px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 4rem;
+
+
+        border-top: solid 1px var(--maincolor);
+        padding-top: 3rem;
+        padding-bottom: 8rem;
+
+    }
+
+    .footerdivs {
+        width: 20%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 1rem;
+    }
+
+    .footerdivs h3 {
+        font-size: 1.9rem;
+        font-weight: bold;
+        font-style: italic;
+        padding-bottom: 2rem;
+        /* Füge diese Zeile hinzu */
+    }
+
+    .footerdivs a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.32rem;
+        transition: 0.2s;
+    }
+
+    .footerdivs a:hover {
+        text-decoration: underline solid 1px black;
+
+    }
+
+
+    #logofooterBild {
+        width: 18rem;
+    }
+
+    #Maillinkfooter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #whatsappkontaktfooter {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* I pad Anischt*/
+    @media(min-width:500px) and (max-width: 950px) {
+        #newfooterdiv {
+            max-width: 1600px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 4rem;
+
+
+            gap: 2rem;
+
+        }
+
+        #logofooterdiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footerdivs {
+            width: 76%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+
+        .footerdivs h3 {
+            font-size: 2.7rem;
+            font-weight: bold;
+            font-style: italic;
+            /* Füge diese Zeile hinzu */
+        }
+
+        .footerdivs a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.62rem;
+            transition: 0.2s;
+        }
+
+        .footerdivs a:hover {
+            color: var(--maincolor);
+
+        }
+
+
+        #logofooterBild {
+            width: 16rem;
+        }
+
+    }
+
+
+    @media(max-width:500px) {
+
+        #newfooterdiv {
+            max-width: 1600px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 4rem;
+
+
+            gap: 2rem;
+
+        }
+
+        #logofooterdiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footerdivs {
+            width: 76%;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100%;
+
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 0.7rem 0rem;
+        }
+
+        .footerdivs h3 {
+            font-size: 1.9rem;
+            font-weight: bold;
+            font-style: italic;
+            padding-bottom: 0.5rem;
+            /* Füge diese Zeile hinzu */
+        }
+
+        .footerdivs a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.32rem;
+            transition: 0.2s;
+        }
+
+        .footerdivs a:hover {
+            color: var(--maincolor);
+
+        }
+
+
+        #logofooterBild {
+            width: 17rem;
+        }
+    }
+</style>

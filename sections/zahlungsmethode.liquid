@@ -1,0 +1,54 @@
+
+<div id="Zahlungsmethodediv">
+        <ul id="ZahlungsmethodeUl" >
+            <li style="list-style: none;">
+                <img style="border: solid 1px black; margin: 0rem 1rem;" width="40rem" class="Zahlungsicons" src="https://cdn.shopify.com/shopifycloud/web/assets/v1/vite/client/de/assets/twint-81c2181cf11b.svg" alt="" />
+            </li>
+            <li style="list-style: none;">
+                <img style="border: solid 1px black; margin: 0rem 1rem;" width="40rem"  class="Zahlungsicons" src="https://cdn.shopify.com/shopifycloud/web/assets/v1/vite/client/de/assets/mastercard-2659ae94c062.svg" alt="" />
+            </li>
+            <li style="list-style: none;">
+                <img style="border: solid 1px black; margin: 0rem 1rem;" width="40rem"  class="Zahlungsicons" src="https://cdn.shopify.com/shopifycloud/web/assets/v1/vite/client/de/assets/maestro-f5b6dc7215dd.svg" alt="" />
+            </li>
+            <li style="list-style: none;">
+                <img style="border: solid 1px black; margin: 0rem 1rem;" width="40rem"  class="Zahlungsicons" src="https://cdn.shopify.com/shopifycloud/web/assets/v1/vite/client/de/assets/visa-a1d3882f8e75.svg" alt="" />
+            </li>
+        </ul>
+</div>
+
+
+{% schema %}
+    {
+        "name": "Zahlungsmethode NEU",
+        "settings": [
+        
+        ],
+        "presets": [
+            {
+                "name": "Zahlungsmethode NEU"
+            }
+        ]
+    }
+{% endschema %}
+
+
+<style>
+
+    #Zahlungsmethodediv{
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        flex-direction: row; 
+        width: 100%; 
+        margin: 0;
+        padding-bottom: 3rem;
+    }
+    #ZahlungsmethodeUl{
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        flex-direction: row; 
+        padding: 0; 
+    }
+    
+</style>

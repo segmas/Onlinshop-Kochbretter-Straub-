@@ -1,0 +1,271 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ferien_tHqEce": {
+      "type": "ferien",
+      "disabled": true,
+      "settings": {
+        "info-width": 65,
+        "info-height": 50,
+        "info-width-handy": 95,
+        "info-height-handy": 55,
+        "titel-ferien": "Information zu Gravuraufträgen",
+        "text-ferien": "Unser Laser befindet sich vom 05.09.2024 bis zum 13.09.2024 im Service, daher werden in diesem Zeitraum keine Gravuraufträge ausgeführt. Besten Dank für Ihr Verständnis."
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "gravurenseitediv1_wJi8X9": {
+      "type": "gravurenseitediv1",
+      "settings": {
+        "Bild1default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/FCSG.webp?v=1718352795",
+        "Bild1TextTitel": "Logos, Motive",
+        "Bild1Wechselbildfirst": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/danke_2.jpg?v=1718293708",
+        "Bild1Wechselbildsecond": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/danke_2.jpg?v=1718293708",
+        "Bild2default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/Danke.webp?v=1718353131",
+        "Bild2TextTitel": "Dankes Geschenke",
+        "Bild2Wechselbildfirst": "",
+        "Bild2Wechselbildsecond": "",
+        "Bild3default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/TangoOneLine.webp?v=1718353727",
+        "Bild3TextTitel": "Hochzeitsgeschenke",
+        "Bild3Wechselbildfirst": "",
+        "Bild3Wechselbildsecond": "",
+        "Bild4default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/Matterhron.webp?v=1718354050",
+        "Bild4TextTitel": "Geburtstagsgeschenke",
+        "Bild4Wechselbildfirst": "",
+        "Bild4Wechselbildsecond": "",
+        "Bild5default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/Ostern.webp?v=1718353850",
+        "Bild6default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/flaschenoeffner.webp?v=1718353245",
+        "Bild7default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/MusikLuzern.webp?v=1718354051"
+      }
+    },
+    "multicolumn_QmkHKU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_KCXhC6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IHRLOGO_d9beda8d-228f-47e7-8788-89c8c471c99c.png",
+            "title": "<strong>1.Schritt</strong>",
+            "text": "<p>Senden Sie uns Ihr Motiv<strong> per E-Mail </strong>oder laden Sie es in unseren <strong>Konfigurator </strong>hoch.</p>",
+            "link_label": "zum Konfigurator",
+            "link": "https://konfigurator.kochbretterstraub.ch/"
+          }
+        },
+        "column_W4EGJU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/iHRlOGO.webp",
+            "title": "<strong>2.Schritt</strong>",
+            "text": "<p>Wählen Sie im Konfigurator Ihr <strong>gewünschtes Brett aus</strong> und <strong>gestalten</strong> Sie es nach <strong>Ihren Vorstellungen </strong>– Größe, Text, etc.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AndxbT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IMG_8428_d2572ba1-79bb-41c3-994a-77877dc8a706.jpg",
+            "title": "<strong>3.Schritt</strong>",
+            "text": "<p>Nachdem wir Ihre Bestellung erhalten haben, prüfen wir Ihre Motive und <strong>erstellen eine Vorlage für Sie,</strong> die wir Ihnen dann als Bild zukommen lassen.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_YmLYdF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/yes.png",
+            "title": "<strong>4.Schritt</strong>",
+            "text": "<p>Wenn Ihnen die Vorlage zusagt und Sie zufrieden sind, lösen wir den Auftrag aus und nach Zahlungseingang gravieren wir <strong>Ihr Schneidebrett sorgfältig.</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_KCXhC6",
+        "column_W4EGJU",
+        "column_AndxbT",
+        "column_YmLYdF"
+      ],
+      "settings": {
+        "title": "<strong>Ablauf</strong>",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "zum Konfigurator",
+        "button_link": "https://konfigurator.kochbretterstraub.ch/",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_MUQQYV": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_CaqBXX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/png.png",
+            "title": "<strong>Bilddatei PNG</strong>",
+            "text": "<p>Bitte verwenden Sie bei Bilddateien eine <strong>möglichst hohe Auflösung.</strong> Zu kleine Auflösungen können die Gravurqualität einschränken.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_g8JiKX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/jpg.png",
+            "title": "<strong>Bilddatei JPG</strong>",
+            "text": "<p><strong>Bitte verwenden Sie bei Bilddateien eine möglichst hohe Auflösung.</strong> Zu kleine Auflösungen können die Gravurqualität einschränken. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JCefjt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/svg.png",
+            "title": "<strong>Vektorgrafik SVG</strong>",
+            "text": "<p>Vektorgrafiken<strong> eignen sich besonders gut für eine Gravur,</strong> da sie beliebig vergrößert und verkleinert werden können, ohne Qualitätsverlust des Bildes</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CaqBXX",
+        "column_g8JiKX",
+        "column_JCefjt"
+      ],
+      "settings": {
+        "title": "<strong>Dateitypen</strong>",
+        "heading_size": "h2",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_KL8Kge": {
+      "type": "multirow",
+      "blocks": {
+        "row_8UXwVD": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/FCSG.webp",
+            "caption": "Gravur auf Buchenholz",
+            "heading": "<strong>Werbegeschenk</strong>",
+            "text": "<p>Lassen Sie sich Ihr Kochbrett mit Ihrem eigenen <strong>Vereins- oder Firmenlogo </strong>gravieren.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_rbQ8jc": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/TangoOneLine.webp",
+            "caption": "Gravur auf Nussholz",
+            "heading": "<strong>Hochzeitsgeschenk</strong>",
+            "text": "<p>Überraschen Sie das Brautpaar mit einem <strong>einzigartigen und persönlichen Hochzeitsgeschenk. </strong>Lassen Sie ihren Namen und das Hochzeitsdatum auf ein schönes Holzbrett gravieren – ein bleibendes Andenken an ihren besonderen Tag.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_KiTMH7": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Matterhron.webp",
+            "caption": "Gravur auf Kirschholz",
+            "heading": "<strong>Geburtstagsgeschenk</strong>",
+            "text": "<p>Ein <strong>graviertes Schneidebrett ist das perfekte Geburtstagsgeschenk! </strong>Mit einer persönlichen Gravur wird aus einem nützlichen Küchenutensil ein einzigartiges Andenken, das tägliche Freude bereitet.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_BpN87C": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Danke.webp",
+            "caption": "Gravur auf Eichenholz",
+            "heading": "<strong>Dankes Geschenk</strong>",
+            "text": "<p>Zeigen Sie Ihre Wertschätzung mit einem individuell gestalteten Kochbrett. <strong>Personalisieren Sie es mit einem Namen, einem besonderen Datum oder einem inspirierenden Zitat – das perfekte Geschenk für jeden Anlass</strong></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_8UXwVD",
+        "row_rbQ8jc",
+        "row_KiTMH7",
+        "row_BpN87C"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "kontakt_qyMADQ": {
+      "type": "kontakt",
+      "disabled": true,
+      "settings": {
+        "slidertitel1": ""
+      }
+    },
+    "scroltop_84Lr9K": {
+      "type": "scroltop",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ferien_tHqEce",
+    "main",
+    "gravurenseitediv1_wJi8X9",
+    "multicolumn_QmkHKU",
+    "multicolumn_MUQQYV",
+    "multirow_KL8Kge",
+    "kontakt_qyMADQ",
+    "scroltop_84Lr9K"
+  ]
+}

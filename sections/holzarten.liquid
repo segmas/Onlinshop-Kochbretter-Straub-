@@ -1,0 +1,490 @@
+<div id="ÜberblickHolzartendiv">
+        <!--Holzart 1-->
+        <div class="Holzartoberdivs">
+            <div class="BaumBildDiv">
+                <img class="HolzartenBild" src="{{section.settings.BaumBild}}" alt="">
+            </div>
+            <div class="HolzartenTextdiv">
+                <h2 class="HolzartenTitel">{{section.settings.HolzName}}</h2>
+                <div class="HolratenTextunterdivs">
+                    <div class="holzarteneigenschaftendivs">
+                        <h3>Aussehen</h3>
+                        <img class="HolzartenoberflächeBild" src="{{section.settings.BildAussehenHolzArt}}" alt="">
+                        <p id="TextAussehen" class="TexteP" >{{section.settings.TextAussehen}}</p>         
+                    </div>
+                    <div class="holzarteneigenschaftendivs">
+                        <h3>Hygienischen</h3>
+                        <img class="HolzartenoberflächeBild" src="https://cdn.shopify.com/s/files/1/0759/8152/1196/files/food.png?v=1718036336" alt="">
+                        <p class="TexteP" >{{section.settings.TextHygienisch}}</p>           
+                    </div>
+                    <div class="holzarteneigenschaftendivs">
+                        <h3>Robust</h3>
+                        <img class="HolzartenoberflächeBild" src="https://cdn.shopify.com/s/files/1/0759/8152/1196/files/muscle.png?v=1718036418" alt="">
+                        <p class="TexteP" >{{section.settings.TextRobust}}</p>           
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+            
+    </div>
+
+
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+
+    #ÜberblickHolzartendiv{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 2rem;
+        padding: 3.3rem 0rem;
+    }
+    .Holzartoberdivs{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1rem;
+
+    }
+
+
+    .BaumBildDiv{
+        width: 42.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .HolzartenBild{
+        width: 43rem;
+    }
+    .HolzartenTextdiv{
+        width: 57.5%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        gap: 2rem;
+
+    }
+    .HolzartenTitel{
+        font-size: 2.8rem;
+        width: 100%;
+        height: 20%;
+        text-align: start;
+        padding-left: 3rem;
+        background-color: black;
+        color: white;
+
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .HolratenTextunterdivs{
+        width: 100%;
+        height: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        gap: 0rem;
+    }
+    .holzarteneigenschaftendivs{
+        width: 33.3%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .holzarteneigenschaftendivs h3{
+        font-size: 2rem;
+        font-weight: bold;
+        color: black;
+    }
+    #BildAussehenHolzArt{
+        width: 10rem;
+    }
+    .HolzartenoberflächeBild{
+        height: 10.5rem;
+    }
+    .TexteP{
+        font-size: 1.48rem;
+        color: rgb(0, 0, 0);
+        width: 16.6rem;
+    }
+    /*Latop Aansicht*/
+    @media(max-width: 1600px){
+        #ÜberblickHolzartendiv{
+        max-width: 1400px;
+        width: 90.5%;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 2rem;
+        padding: 3.3rem 0rem;
+    }
+    .Holzartoberdivs{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1rem;
+
+    }
+
+
+    .BaumBildDiv{
+        width: 42.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .HolzartenBild{
+        width: 34rem;
+    }
+    .HolzartenTextdiv{
+        width: 57.5%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        gap: 2rem;
+
+    }
+    .HolzartenTitel{
+        font-size: 2.4rem;
+        width: 100%;
+        height: 20%;
+        text-align: start;
+        padding-left: 3rem;
+        background-color: black;
+        color: white;
+
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .HolratenTextunterdivs{
+        width: 100%;
+        height: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        gap: 0rem;
+    }
+    .holzarteneigenschaftendivs{
+        width: 33.3%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .holzarteneigenschaftendivs h3{
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: black;
+    }
+    #BildAussehenHolzArt{
+        width: 7rem;
+    }
+    .HolzartenoberflächeBild{
+        height: 9rem;
+    }
+    .TexteP{
+        font-size: 1.33rem;
+        color: rgb(0, 0, 0);
+        width: 13.8rem;
+    }
+    }
+
+
+
+
+    @media(min-width: 500px) and (max-width:950px){
+
+    #ÜberblickHolzartendiv{
+        max-width: 1400px;
+        width: 90.3%;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 2rem;
+        padding: 2rem 0rem;
+    }
+    .Holzartoberdivs{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1rem;
+
+    }
+
+
+    .BaumBildDiv{
+        width: 42.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .HolzartenBild{
+        width: 25rem;
+    }
+    .HolzartenTextdiv{
+        width: 57.5%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        gap: 2rem;
+
+    }
+    .HolzartenTitel{
+        font-size: 2.4rem;
+        width: 100%;
+        height: 20%;
+        text-align: start;
+        padding-left: 3rem;
+        background-color: black;
+        color: white;
+
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .HolratenTextunterdivs{
+        width: 100%;
+        height: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        gap: 0rem;
+    }
+    .holzarteneigenschaftendivs{
+        width: 33.3%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .holzarteneigenschaftendivs h3{
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: black;
+    }
+    #BildAussehenHolzArt{
+        width: 7rem;
+    }
+    .HolzartenoberflächeBild{
+        height: 7rem;
+    }
+    .TexteP{
+        font-size: 1.23rem;
+        color: rgb(0, 0, 0);
+        width: 10.8rem;
+    }
+
+
+
+
+    }
+
+    /*Phone View*/
+    @media(max-width:500px){
+        #ÜberblickHolzartendiv{
+        max-width: 1400px;
+        width: 93%;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 2rem;
+        padding: 1rem 0rem;
+    }
+    .Holzartoberdivs{
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+
+    .BaumBildDiv{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .HolzartenBild{
+        width: 28rem;
+    }
+    .HolzartenTextdiv{
+        width: 95%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        gap: 2rem;
+
+    }
+    .HolzartenTitel{
+        font-size: 2.4rem;
+        width: 100%;
+        height: 20%;
+        text-align: start;
+        padding-left: 3rem;
+        background-color: black;
+        color: white;
+
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+    .HolratenTextunterdivs{
+        width: 100%;
+        height: 80%;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .holzarteneigenschaftendivs{
+        width: 33.3%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .holzarteneigenschaftendivs h3{
+        font-size: 1.45rem;
+        font-weight: bold;
+        color: black;
+    }
+    #BildAussehenHolzArt{
+        width: 4rem;
+    }
+    .HolzartenoberflächeBild{
+        height: 5.6rem;
+    }
+    .TexteP{
+        font-size: 1.23rem;
+        color: rgb(0, 0, 0);
+        width: 8.5rem;
+    }
+    }
+    
+    
+</style>
+
+
+
+{% schema %}
+    {
+        "name": "HolzartenDiv",
+        "settings": [
+                {
+                    "type": "text",
+                    "label": "Baum Bild",
+                    "id": "BaumBild"
+                },
+                {
+                    "type": "text",
+                    "label": "Bild Aussehen Holz Art",
+                    "id": "BildAussehenHolzArt"
+                },
+                {
+                    "type": "text",
+                    "label": "Holz Name",
+                    "id": "HolzName"
+                },
+                {
+                    "type": "text",
+                    "label": "Text Aussehen",
+                    "id": "TextAussehen"
+                },
+                {
+                    "type": "text",
+                    "label": "Text Hygienisch",
+                    "id": "TextHygienisch"
+                },
+                {
+                    "type": "text",
+                    "label": "Text Robust",
+                    "id": "TextRobust"
+                }
+                
+
+
+        ],
+        "presets": [
+            {
+                "name": "HolzartenDiv"
+            }
+        ]
+    }
+{% endschema %}

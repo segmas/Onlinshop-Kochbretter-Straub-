@@ -1,0 +1,303 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "ferien_FU8mFf": {
+      "type": "ferien",
+      "disabled": true,
+      "settings": {
+        "info-width": 65,
+        "info-height": 50,
+        "info-width-handy": 95,
+        "info-height-handy": 55,
+        "titel-ferien": "Information zu Gravuraufträgen",
+        "text-ferien": "Unser Laser befindet sich vom 05.09.2024 bis zum 13.09.2024 im Service, daher werden in diesem Zeitraum keine Gravuraufträge ausgeführt. Besten Dank für Ihr Verständnis."
+      }
+    },
+    "img_slider_Bn3EC8": {
+      "type": "ImgSlider",
+      "custom_css": [
+        "#SliderTiteleins {left: 13rem;}",
+        "#SliderTitelzwei {left: 14%; bottom: 20%;}",
+        "#SliderTiteldrei {}",
+        "@media (min-width: 500px) and (max-width: 950px) {#SliderTiteleins {left: 3rem; }}",
+        "@media (max-width: 500px) {#SliderTiteleins {left: 1.5rem; top: -10.5rem; } #SliderTitelzwei {left: -18.5%; bottom: 7%; } #SliderTiteldrei {left: 50%; top: 0%; transform: translate(-50%); }}"
+      ],
+      "settings": {
+        "SpanUrlLinkleft": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/SpanLeft.webp?v=1719988018",
+        "SpanUrlLinkRight": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/SpanRight.webp?v=1719988018",
+        "slidertitel1": "Individuelle Kochbretter",
+        "slidertitel2": "Gravuren",
+        "slidertitel3": "Weihnachtsmarkt 2024",
+        "slidertext1": "",
+        "slidertext2": "Wir gravieren Ihre Logos.",
+        "slidertext3": "",
+        "sliderbild1": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_4201.webp?v=1718373038",
+        "sliderbild2": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_9204_1.webp?v=1718380059",
+        "sliderbild3": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/markt4_2_c8cb1215-0541-4671-9724-63b67fd78a89.jpg?v=1726599956",
+        "sliderbutton1": "Jetzt selbst gestalten",
+        "sliderbutton2": "mehr erfahren",
+        "sliderbutton3": "mehr erfahren",
+        "sliderbuttonlink1": "https://konfigurator.kochbretterstraub.ch/",
+        "sliderbuttonlink2": "shopify://pages/gravuren",
+        "sliderbuttonlink3": "shopify://pages/messen-und-weihnachtsmarkt",
+        "slidertexthandyansicht1": "",
+        "slidertexthandyansicht2": "",
+        "slidertexthandyansicht3": ""
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Bestseller",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestseller",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 32
+      }
+    },
+    "kategoriauswahl_7Hc9Bj": {
+      "type": "Kategoriauswahl",
+      "settings": {
+        "arrowspanright1": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/arrowleftSpanwhite.webp?v=1719988608",
+        "arrowspanright2": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/arrowleftSpanwhite.webp?v=1719988608",
+        "arrowspanright3": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/arrowleftSpanblack.webp?v=1719988608",
+        "Kategorie1Titel": "Schneidebretter mit Füssen",
+        "Kategorie1Text": "Unsere Schneidebretter mit Füßen bieten eine stabile Arbeitsfläche, die das Schneiden erleichtert und durch das natürliche Material Holz die Hygiene in der Küche fördert.",
+        "Kategorie1Bild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_7029_c54d1161-f883-4c4a-8ea6-7e3635ec3c46.jpg?v=1693244785",
+        "Kategorie1Linksrc": "shopify://collections/schneidebretter-mit-fussen",
+        "Kategorie2Titel": "Schneidebretter mit Griff",
+        "Kategorie2Text": "Unsere Schneidebretter mit Griff ermöglichen einen einfachen Transport und eine bequeme Handhabung, was die Effizienz und den Komfort beim Kochen erheblich steigert.",
+        "Kategorie2Bild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_9303.jpg?v=1696776111",
+        "Kategorie2Linksrc": "shopify://collections/schneidebretter-mit-griff",
+        "Kategorie3Titel": "Geschenkbretter",
+        "Kategorie3Text": "Unsere Geschenkbretter sind dekorative und personalisierte Schneidebretter, die sich<strong> perfekt als einzigartige und praktische Geschenkidee</strong> für verschiedenste Anlässe eignen.",
+        "Kategorie3Bild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_2231_1.jpg?v=1699804165",
+        "Kategorie3Linksrc": "shopify://collections/geschenk-bretter"
+      }
+    },
+    "counterdiv_VjCfjy": {
+      "type": "counterdiv",
+      "settings": {
+        "IconsColor": "#000000",
+        "Bild1Icon": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/Hand.svg?v=1699033309",
+        "Bild2Icon": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/laserimg.webp?v=1718024668",
+        "Bild3Icon": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/star.webp?v=1718024668",
+        "TextZuIcon1": "Handgefertigt",
+        "TextZuIcon2": "Individualisierbar",
+        "TextZuIcon3": "Unikate"
+      }
+    },
+    "gravurenseitediv1_tCJM3B": {
+      "type": "gravurenseitediv1",
+      "settings": {
+        "Bild1default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/FCSG.webp?v=1718352795",
+        "Bild1TextTitel": "Logos, Motive",
+        "Bild1Wechselbildfirst": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/danke_2.jpg?v=1718293708",
+        "Bild1Wechselbildsecond": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/danke_2.jpg?v=1718293708",
+        "Bild2default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/Danke.webp?v=1718353131",
+        "Bild2TextTitel": "Geschenke",
+        "Bild2Wechselbildfirst": "",
+        "Bild2Wechselbildsecond": "",
+        "Bild3default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/TangoOneLine.webp?v=1718353727",
+        "Bild3TextTitel": "Hochzeitgeschenke",
+        "Bild3Wechselbildfirst": "",
+        "Bild3Wechselbildsecond": "",
+        "Bild4default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/Matterhron.webp?v=1718354050",
+        "Bild4TextTitel": "Geburtstagsgeschenke",
+        "Bild4Wechselbildfirst": "",
+        "Bild4Wechselbildsecond": "",
+        "Bild5default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/Ostern.webp?v=1718353850",
+        "Bild6default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/flaschenoeffner.webp?v=1718353245",
+        "Bild7default": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/MusikLuzern.webp?v=1718354051"
+      }
+    },
+    "gravuren_VXTVJ6": {
+      "type": "gravuren",
+      "blocks": {
+        "beispielblock_DGWJR8": {
+          "type": "beispielblock",
+          "settings": {
+            "gravurenbeispielImg": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_7029_2.jpg?v=1714540817",
+            "beispieltitel": "Werbegeschenke",
+            "beisieltext": "<p>Werbegeschenke mit Lasergravuren sind eine elegante Möglichkeit, <em><strong>Ihr Unternehmen hervorzuheben</strong></em> und einen bleibenden Eindruck zu hinterlassen.</p>",
+            "linksrcmehrerfahren": "shopify://pages/gravuren"
+          }
+        },
+        "beispielblock_LdEjUT": {
+          "type": "beispielblock",
+          "settings": {
+            "gravurenbeispielImg": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_0757.jpg?v=1697814801",
+            "beispieltitel": "Geburtstagsgeschenke",
+            "beisieltext": "<p>Unsere Schneidebretter mit Lasergravur sind das <em><strong>perfekte Geburtstagsgeschenk!</strong></em> Gestalten Sie ein Schneidebrett mit dem Namen des Geburtstagskindes oder einer persönlichen Botschaft und machen Sie den Tag unvergesslich.</p>",
+            "linksrcmehrerfahren": "shopify://pages/gravuren"
+          }
+        }
+      },
+      "block_order": [
+        "beispielblock_DGWJR8",
+        "beispielblock_LdEjUT"
+      ],
+      "disabled": true,
+      "settings": {
+        "GravurenTitel": "",
+        "movie": "https://cdn.shopify.com/videos/c/o/v/a1483a4067a640a3a9d077f238f1d6a7.mp4",
+        "PlaceHolderImgforMovie": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/VideoTitelBild.webp?v=1718173443",
+        "MovieTitel": "Individuelles Kochbrett",
+        "TitelFontSize": "3.1rem",
+        "MovieText": "Mit einem individuellen Schneidebrett begeistern Sie jeden! Ob ein <strong>spezieller Spruch</strong>, ein<strong> Firmenlogo</strong>, das <strong>Vereinswappen</strong> oder der <strong>Name des Geburtstagskindes </strong>– dieses personalisierte Geschenk ist ein echter Hingucker und eine wunderschöne Erinnerung.",
+        "JetztSelberGestaltenText": "Jetzt selber gestalten",
+        "JetztSelberGestaltenLink": "https://konfigurator.kochbretterstraub.ch/",
+        "BackgroundColorMain": "#ffffff",
+        "BackgroundColorSecond": "#f5f5f5"
+      }
+    },
+    "featured_collection_7hgUyN": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Diverses",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "diverses",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_Hfae3R": {
+      "type": "multicolumn",
+      "custom_css": [
+        ".multicolumn .title-wrapper-with-link {display: flex; align-items: center; justify-content: center;}"
+      ],
+      "settings": {
+        "title": "Unsere Holzarten",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "holzarten_FzhXe6": {
+      "type": "holzarten",
+      "settings": {
+        "BaumBild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/eiche.png?v=1718032606",
+        "BildAussehenHolzArt": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_2286_3.jpg?v=1699821218",
+        "HolzName": "Eiche",
+        "TextAussehen": "Eichenholz hat eine markante Maserung, eine  <strong> warme, goldbraune Färbung </strong> und sichtbare Jahresringe mit auffälligen Spiegeln.",
+        "TextHygienisch": "Eichenholz ist ideal für Schneidebretter, da es <strong> natürliche antibakterielle Eigenschaften </strong>besitzt, die das Wachstum von Keimen hemmen können.",
+        "TextRobust": "Eichenholz ist ideal für Schneidebretter, da es <strong> aufgrund seiner Robustheit eine langlebige Oberfläche bietet, </strong>die den Belastungen in der Küche standhält."
+      }
+    },
+    "holzarten_JenxHJ": {
+      "type": "holzarten",
+      "settings": {
+        "BaumBild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/buche.png?v=1718032610",
+        "BildAussehenHolzArt": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_9485_3.jpg?v=1699820083",
+        "HolzName": "Buche",
+        "TextAussehen": "Buchenholz ist eine beliebte Wahl für Schneidebretter aufgrund seiner <strong> hellen, cremeweißen bis rötlich-braunen Farbe </strong> und der feinen Maserung.",
+        "TextHygienisch": "Buchenholz ist von <strong>  Natur aus hygienisch, </strong> da es eine glatte Oberfläche hat, die leicht zu reinigen ist.",
+        "TextRobust": "Das Holz ist <strong> hart und widerstandsfähig, was es ideal für den täglichen Gebrauch in der Küche macht.</strong>"
+      }
+    },
+    "holzarten_63awG7": {
+      "type": "holzarten",
+      "settings": {
+        "BaumBild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/kirschbaum.png?v=1718032605",
+        "BildAussehenHolzArt": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_2366_4.jpg?v=1699820244",
+        "HolzName": "Kirschbaum",
+        "TextAussehen": "Kirschholz ist eine vorzügliche Wahl für Schneidebretter aufgrund seiner <strong> warmen, rötlich-braunen Farbe und der attraktiven Maserung.</strong>",
+        "TextHygienisch": "Kirschholz hat eine natürliche, glatte Oberfläche, die leicht zu reinigen ist und <strong> Bakterien weniger Raum zum Wachsen bietet </strong>",
+        "TextRobust": "Kirschholz ist eine ausgezeichnete Wahl für Schneidebretter <strong> aufgrund seiner robusten und dennoch geschmeidigen Textur.</strong>"
+      }
+    },
+    "holzarten_zhxWej": {
+      "type": "holzarten",
+      "settings": {
+        "BaumBild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/walnuttree.png?v=1718114654",
+        "BildAussehenHolzArt": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_9429_4.jpg?v=1699822525",
+        "HolzName": "Nussbaum",
+        "TextAussehen": "Nussbaumholz zeichnet sich durch seine <strong> charakteristische dunkle Farbe und die auffällige Maserung aus, </strong>was den Schneidebrettern eine elegante Ästhetik verleiht.",
+        "TextHygienisch": "Die glatte Oberfläche des Nussbaumholzes ist <strong>leicht zu reinigen und bietet Bakterien weniger Angriffsfläche  </strong>für ein gesünderes Küchenumfeld.",
+        "TextRobust": "Nussbaumholz ist ideal für Schneidebretter, da es <strong> robust, langlebig und widerstandsfähig gegen Abnutzung ist.</strong>"
+      }
+    },
+    "kontakt_iciRTg": {
+      "type": "kontakt",
+      "disabled": true,
+      "settings": {
+        "slidertitel1": ""
+      }
+    },
+    "scroltop_4XhPyk": {
+      "type": "scroltop",
+      "settings": {}
+    }
+  },
+  "order": [
+    "ferien_FU8mFf",
+    "img_slider_Bn3EC8",
+    "featured_collection",
+    "kategoriauswahl_7Hc9Bj",
+    "counterdiv_VjCfjy",
+    "gravurenseitediv1_tCJM3B",
+    "gravuren_VXTVJ6",
+    "featured_collection_7hgUyN",
+    "multicolumn_Hfae3R",
+    "holzarten_FzhXe6",
+    "holzarten_JenxHJ",
+    "holzarten_63awG7",
+    "holzarten_zhxWej",
+    "kontakt_iciRTg",
+    "scroltop_4XhPyk"
+  ]
+}

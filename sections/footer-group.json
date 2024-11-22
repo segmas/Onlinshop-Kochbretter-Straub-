@@ -1,0 +1,70 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footernew_NVyT9U": {
+      "type": "footernew",
+      "settings": {
+        "footerimgsrc": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/LogoWebsite_1de9a2fa-8fbe-4296-b0f6-053662319296.webp?v=1717792706",
+        "Sortimentmenu1": "Schneidebretter mit Füßen",
+        "linksortimenmenu1": "shopify://collections/schneidebretter-mit-fussen",
+        "Sortimentmenu2": "Schneidebretter mit Griff",
+        "linksortimenmenu2": "shopify://collections/schneidebretter-mit-griff",
+        "Sortimentmenu3": "Schnapsbretter",
+        "linksortimenmenu3": "shopify://collections/spezielle-bretter",
+        "Sortimentmenu4": "Flaschenöffner",
+        "linksortimenmenu4": "shopify://collections/flaschenoffner",
+        "Sortimentmenu5": "Diverses",
+        "linksortimenmenu5": "shopify://collections/diverses",
+        "ImpressumURLlink": "shopify://policies/legal-notice",
+        "ZahlungVersandURLlink": "shopify://policies/shipping-policy",
+        "DatenschutzerklarungURLlink": "shopify://policies/privacy-policy",
+        "AGBsURLlink": "shopify://policies/terms-of-service",
+        "GutZuWissen1": "Schneidebretter Pflege",
+        "GutZuWissenURLLINK1": "shopify://pages/schneidebretter-pflege",
+        "GutZuWissen2": "Messen/Märkte",
+        "GutZuWissenURLLINK2": "shopify://pages/messen-und-weihnachtsmarkt"
+      }
+    },
+    "zahlungsmethode_njyWm7": {
+      "type": "zahlungsmethode",
+      "settings": {}
+    },
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "enable_country_selector": true,
+        "enable_language_selector": true,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 48,
+        "padding_bottom": 0
+      }
+    },
+    "unterfooter_LQtM7w": {
+      "type": "unterfooter",
+      "settings": {}
+    }
+  },
+  "order": [
+    "footernew_NVyT9U",
+    "zahlungsmethode_njyWm7",
+    "footer",
+    "unterfooter_LQtM7w"
+  ]
+}

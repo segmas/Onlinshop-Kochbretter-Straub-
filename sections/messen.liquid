@@ -1,0 +1,319 @@
+<!--HTML-->
+<div id="messen-div">
+    <h2 id="messen-titel">
+        {{ section.settings.messen-titel }}
+    </h2>
+
+    {% for block in section.blocks %}
+        <div class="markt-blocks">
+
+            <div class="markt-row-div">
+                 <!--Bild-->
+                {% if block.settings.markt-bilder %}
+                    <img class="markt-bild" src="{{ block.settings.markt-bilder | img_url: 'master' }}" alt="">
+                {% endif %}
+
+
+                <div class="markt-daten-titel-div">
+                    <!--Markt-Titel-->
+                    {% if block.settings.markttitel %}
+                        <h3 class="markt-titel">
+                            {{ block.settings.markttitel }}
+                        </h3>
+                    {% endif %}
+                    <!--Daten-->
+                    <!--1-->
+                    {% if block.settings.data1 %}
+                        <p class="daten-class">{{block.settings.data1}}</p>
+                    {% endif %}
+                    <!--2-->
+                    {% if block.settings.data2 %}
+                        <p class="daten-class">{{block.settings.data2}}</p>
+                    {% endif %}
+                    <!--3-->
+                    {% if block.settings.data3 %}
+                        <p class="daten-class">{{block.settings.data3}}</p>
+                    {% endif %}
+                     <!--3-->
+                     {% if block.settings.data4 %}
+                        <p class="daten-class">{{block.settings.data4}}</p>
+                    {% endif %}
+                </div>
+            </div>
+                <!--Markt Text Beschreibung-->
+                {% if block.settings.description %}
+                    <p class="description-class">{{ block.settings.description }}</p>
+                {% endif %}
+        </div>
+    {% endfor %}
+</div>
+
+
+
+
+
+<!--Schema-->
+{% schema %}
+    {
+        "name": "messen",
+        "settings": [
+            {
+                "type": "range",
+                "label": "Titel-Font-Size",
+                "id": "messen-titel-fontsize",
+                "max": 5,
+                "min": 1,
+                "step": 0.5,
+                "default": 1.5
+            },
+            {
+                "type": "text",
+                "id": "messen-titel",
+                "label": "Titel"
+            },
+            {
+                "type": "range",
+                "label": "MarktTitel-Font-Size",
+                "id": "markt-titel-fontsize",
+                "max": 5,
+                "min": 1,
+                "step": 0.5,
+                "default": 1.5
+            },
+            {
+                "type": "range",
+                "label": "MarktBild-width",
+                "id": "markt-bild-width",
+                "max": 100,
+                "min": 20,
+                "step": 2,
+                "default": 30
+            }
+        ],
+        "blocks": [
+            {
+                "name": "marktblocks",
+                "type": "text",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "markttitel",
+                        "label": "MarktTitel"
+                    },
+                    {
+                        "type": "image_picker",
+                        "label": "Markt Bilder",
+                        "id": "markt-bilder"
+                    },
+                    {
+                        "type": "text",
+                        "id": "data1",
+                        "label": "Marktdaten 1"
+                    },
+                    {
+                        "type": "text",
+                        "id": "data2",
+                        "label": "Marktdaten 2"
+                    },
+                    {
+                        "type": "text",
+                        "id": "data3",
+                        "label": "Marktdaten 3"
+                    },
+                    {
+                        "type": "text",
+                        "id": "data4",
+                        "label": "Marktdaten 4"
+                    },
+                    {
+                        "type": "text",
+                        "id": "description",
+                        "label": "Beschreibungs Text Markt"
+                    }
+
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "messen"
+            }
+        ]
+    }
+{% endschema %}
+
+
+
+<!--CSS-->
+<style>
+#messen-div{
+    max-width: 1375px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#messen-titel{
+    font-weight: bold;
+    font-size: {{ section.settings.messen-titel-fontsize }}rem;
+}
+
+
+
+
+
+
+/*------blocks-----*/
+.markt-blocks{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.markt-row-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.markt-titel{
+    background-color: black;
+    color: white;
+
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+
+    padding: 0.3rem 0.9rem;
+
+    font-size: {{ section.settings.markt-titel-fontsize }}rem;
+    font-weight: bold;
+    
+}
+
+
+.markt-bild{
+    width: {{ section.settings.markt-bild-width }}rem;
+}
+
+
+.daten-class{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: black;
+}
+
+.description-class{
+    color: black;
+    font-size: 1.62rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------Phone View ---------------------------------------------------*/
+@media(max-width:950px){
+    #messen-div{
+    max-width: 1375px;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#messen-titel{
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+
+.markt-daten-titel-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/*------blocks-----*/
+.markt-blocks{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.markt-row-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+
+.markt-titel{
+    background-color: black;
+    color: white;
+
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+
+    padding: 0.3rem 0.3rem;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    width: 95%;
+    
+}
+
+
+.markt-bild{
+    width: 100%;
+}
+
+
+.daten-class{
+    width: 95%;
+    font-size: 1.55rem;
+    font-weight: bold;
+    color: black;
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+}
+
+.description-class{
+    width: 95%;
+    color: black;
+    font-size: 1.62rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+}
+
+</style>

@@ -1,0 +1,818 @@
+
+
+<div id="obermainkategoriediv">
+
+
+    <div id="leftmainkategoridiv">
+
+        <a href="{{section.settings.Kategorie1Linksrc}}" class="leftmainkategoridivs">
+            <img class="leftmainBilder" src={{section.settings.Kategorie1Bild}} alt="">
+            <div class="textunterdivs">
+                <h3>{{section.settings.Kategorie1Titel}}
+                </h3>
+                <p class="textunterdivPTAG">{{section.settings.Kategorie1Text}}</p>
+                <img id="arrowspan" src="{{section.settings.arrowspanright1}}" alt="">
+            </div>
+        </a>
+        <a id="secondleftmainkategoridiv" href="{{section.settings.Kategorie2Linksrc}}" class="leftmainkategoridivs">
+            <div class="textunterdivs">
+                <h3>{{section.settings.Kategorie2Titel}}</h3>
+                <p class="textunterdivPTAG">{{section.settings.Kategorie2Text}}</p>
+                <img id="arrowspan" src="{{section.settings.arrowspanright2}}" alt="">
+            </div>
+            <img class="leftmainBilder" src={{section.settings.Kategorie2Bild}} alt="">
+        </a>
+
+
+    </div>
+
+
+    <a href="{{section.settings.Kategorie3Linksrc}}" class="rightmainunterdivtexteclass" id="rightmainkategoridiv">
+
+        <img class="rightmainBild" src={{section.settings.Kategorie3Bild}} alt="">
+
+        <div  id="rightmainunterdivtexte">
+            <h3>{{section.settings.Kategorie3Titel}}</h3>
+            <p class="textunterdivPTAG">{{section.settings.Kategorie3Text}}</p>
+            <img id="arrowspan" src="{{section.settings.arrowspanright3}}" alt="">
+        </div>
+
+
+    </a>
+
+
+</div>
+
+
+
+<script>
+
+
+    // Script um den Hover effect auszulösen
+    const leftmainkategoridivs = document.querySelectorAll(".leftmainkategoridivs"); // Alle 2 leftmainkategoridivs 
+    
+
+    leftmainkategoridivs.forEach((element) =>{
+        element.addEventListener("mouseover", () =>{
+            element.classList.add("mousevent");
+        })
+        element.addEventListener("mouseout", () =>{
+            element.classList.remove("mousevent");
+        })
+    })
+
+
+
+
+
+
+
+
+
+
+
+    //Überwacht den Viewport ob der div sichtbar ist 
+
+    const leftmainkategoridiv = document.getElementById("leftmainkategoridiv");
+    const rightmainkategoridiv = document.getElementById("rightmainkategoridiv");
+
+    // Funktion, die ausgeführt wird, wenn das Element sichtbar ist
+    function callbackkategorie(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                leftmainkategoridiv.classList.add("active");
+                rightmainkategoridiv.classList.add("active");
+            } else {
+
+            }
+        });
+    }
+
+    // Optionen für den Observer (optional)
+    const options = {
+        root: null, // Standard: null (Viewport)
+        rootMargin: '0px',
+        threshold: 0.1 // Prozentsatz des Elements, das sichtbar sein muss (hier 10%)
+    };
+
+    // Observer erstellen
+    const observer = new IntersectionObserver(callbackkategorie, options);
+
+    // Element mit der ID 'myElement' beobachten
+    const target = document.getElementById('obermainkategoriediv');
+    observer.observe(target);
+
+
+</script>
+
+
+
+
+
+
+
+{% schema %}
+{
+"name": "obermainkategoriediv",
+"settings": [
+    {
+        "type": "text",
+        "label": "arrowspanright1",
+        "id": "arrowspanright1"
+    },
+    {
+        "type": "text",
+        "label": "arrowspanright2",
+        "id": "arrowspanright2"
+    },
+    {
+        "type": "text",
+        "label": "arrowspanright3",
+        "id": "arrowspanright3"
+    },
+{
+"type": "text",
+"label": "Kategorie 1 Titel",
+"id": "Kategorie1Titel"
+},
+{
+"type": "text",
+"label": "Kategorie 1 Text",
+"id": "Kategorie1Text"
+},
+{
+"type": "text",
+"label": "Kategorie 1 Bild",
+"id": "Kategorie1Bild"
+},
+{
+"type": "url",
+"label": "Kategorie 1 Linksrc",
+"id": "Kategorie1Linksrc"
+},
+{
+"type": "text",
+"label": "Ktegorie 2 Titel",
+"id": "Kategorie2Titel"
+},
+{
+"type": "text",
+"label": "Kategorie 2 Text",
+"id": "Kategorie2Text"
+},
+{
+"type": "text",
+"label": "Kategorie 2 Bild",
+"id": "Kategorie2Bild"
+},
+{
+"type": "url",
+"label": "Kategorie 2 Linksrc",
+"id": "Kategorie2Linksrc"
+},
+{
+"type": "text",
+"label": "Ktegorie 3 Titel",
+"id": "Kategorie3Titel"
+},
+{
+"type": "text",
+"label": "Kategorie 3 Text",
+"id": "Kategorie3Text"
+},
+{
+"type": "text",
+"label": "Kategorie 3 Bild",
+"id": "Kategorie3Bild"
+},
+{
+"type": "url",
+"label": "Kategorie 3 Linksrc",
+"id": "Kategorie3Linksrc"
+}
+],
+"presets": [
+{
+"name": "obermainkategoriediv"
+}
+]
+}
+{% endschema %}
+
+
+<style>
+    /*variablen*/
+    :root {
+        --BildundTextdibheight: 28rem;
+        --h3sizetitel: 2.5rem;
+        --backgroundcolor: rgb(36, 36, 36);
+        --textcolornow: rgb(234, 234, 234);
+    }
+
+
+    #obermainkategoriediv {
+        max-width: 1450px;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 0.5rem;
+    }
+
+    #leftmainkategoridiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 66.6%;
+        overflow: hidden;
+        opacity: 0;
+        /* Anfangs unsichtbar */
+        transition: opacity 1s ease-in-out;
+        /* Übergangsanimation */
+    }
+
+    #leftmainkategoridiv.active {
+        opacity: 1;
+        /* Voll sichtbar */
+    }
+
+
+
+    .leftmainkategoridivs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        gap: 0.5rem;
+        text-decoration: none;
+
+    }
+    .leftmainkategoridivs.mousevent{
+            opacity: 0.7;
+            transition: 0.2s;
+        }
+
+    .leftmainBilder {
+        height: var(--BildundTextdibheight);
+        width: auto;
+    }
+
+    .textunterdivs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 50%;
+
+        overflow: hidden;
+
+        color: var(--textcolornow);
+
+        background-color: var(--backgroundcolor);
+        height: var(--BildundTextdibheight);
+
+
+    }
+
+    .textunterdivs h3 {
+        color: white;
+        font-size: var(--h3sizetitel);
+        font-weight: bold;
+        margin: 1rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }   
+    #arrowspan{
+        padding-top: 1rem;
+        font-size: 3.5rem;
+        width: 4rem;
+    }
+    .textunterdivPTAG {
+        color: white;
+        font-size: 1.45rem;
+        margin: 0rem 2rem;
+    }
+
+
+
+
+    #rightmainkategoridiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        gap: 0.5rem;
+        width: 33.3%;
+
+        overflow: hidden;
+
+        background-color: white;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+
+        text-decoration: none;
+    }
+
+    #rightmainkategoridiv.active {
+        opacity: 1;
+        transition: 0.2s;
+    }
+    #rightmainkategoridiv.active:hover{
+        opacity: 0.7;
+    }
+    .rightmainunterdivtexteclass:hover{
+        opacity: 0.7;
+    }
+
+
+    #rightmainunterdivtexte {
+        height: var(--BildundTextdibheight);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 100%;
+
+        background-color: var(--textcolornow);
+        color: var(--backgroundcolor);
+    }
+
+    #rightmainunterdivtexte h3 {
+        color: var(--backgroundcolor);
+        font-size: var(--h3sizetitel);
+        font-weight: bold;
+        margin: 1rem;
+    }
+
+    #rightmainunterdivtexte p {
+        color: var(--backgroundcolor);
+        font-size: 1.45rem;
+        margin: 0rem 2rem;
+    }
+
+
+    .rightmainBild {
+        height: var(--BildundTextdibheight);
+
+        width: auto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Laptop ansicht*/
+    @media (max-width: 1600px) {
+
+
+        /*variablen*/
+        :root {
+            --BildundTextdibheight: 28rem;
+            --h3sizetitel: 2.5rem;
+        }
+
+
+        #obermainkategoriediv {
+            max-width: 91%;
+            margin-left: auto;
+            margin-right: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            gap: 0.5rem;
+        }
+
+        #leftmainkategoridiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 0.5rem;
+            width: 66.6%;
+
+            overflow: hidden;
+        }
+
+        .leftmainkategoridivs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+
+            gap: 0.5rem;
+
+        }
+
+
+        .leftmainBilder {
+            height: var(--BildundTextdibheight);
+            width: auto;
+        }
+
+        .textunterdivs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            width: 50%;
+
+            overflow: hidden;
+
+            color: white;
+
+            background-color: var(--backgroundcolor);
+            height: var(--BildundTextdibheight);
+
+
+        }
+
+        .textunterdivs h3 {
+            color: white;
+            font-size: var(--h3sizetitel);
+            font-weight: bold;
+            margin: 1rem;
+        }
+
+        .textunterdivPTAG {
+            color: white;
+            font-size: 1.45rem;
+            margin: 0rem 2rem;
+        }
+
+
+
+
+        #rightmainkategoridiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            gap: 0.5rem;
+            width: 33.3%;
+
+            overflow: hidden;
+
+            background-color: white;
+
+        }
+
+        #rightmainunterdivtexte {
+            height: var(--BildundTextdibheight);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            background-color: rgb(243, 243, 243);
+            color: var(--maincolor);
+        }
+
+        #rightmainunterdivtexte h3 {
+            color: var(--backgroundcolor);
+            font-size: var(--h3sizetitel);
+            font-weight: bold;
+            margin: 1rem;
+        }
+
+        #rightmainunterdivtexte p {
+            color: var(--backgroundcolor);
+            font-size: 1.45rem;
+            margin: 0rem 2rem;
+        }
+
+
+        .rightmainBild {
+            height: var(--BildundTextdibheight);
+            width: auto;
+        }
+
+
+
+
+    }
+
+
+
+
+    /*I Pad Anischt */
+    @media (max-width: 950px) and (min-width: 500px) {
+
+
+        /*variablen*/
+        :root {
+            --BildundTextdibheight: 20rem;
+            --h3sizetitel: 1.9rem;
+        }
+
+
+        #obermainkategoriediv {
+            max-width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            gap: 0.6rem;
+        }
+
+        #leftmainkategoridiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 0.6rem;
+            width: 100%;
+
+            overflow: hidden;
+        }
+
+        .leftmainkategoridivs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+
+            gap: 0.5rem;
+
+        }
+
+        .leftmainBilder {
+            height: var(--BildundTextdibheight);
+            width: auto;
+        }
+
+        .textunterdivs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            width: 50%;
+
+            overflow: hidden;
+
+            color: white;
+
+            background-color: var(--backgroundcolor);
+            height: var(--BildundTextdibheight);
+
+
+        }
+
+        .textunterdivs h3 {
+            color: white;
+            font-size: var(--h3sizetitel);
+            font-weight: bold;
+            margin: 1rem;
+        }
+
+        .textunterdivPTAG {
+            color: white;
+            font-size: 1.25rem;
+            margin: 0rem 2rem;
+        }
+        #arrowspan{
+        padding-top: 0.6rem;
+        font-size: 2.5rem;
+        width: 2.6rem;
+        }
+
+
+
+
+        #rightmainkategoridiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+
+            gap: 0.5rem;
+            width: 100%;
+
+            overflow: hidden;
+
+            background-color: white;
+
+        }
+
+        #rightmainunterdivtexte {
+            height: var(--BildundTextdibheight);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            background-color: rgb(243, 243, 243);
+            color: var(--backgroundcolor);
+        }
+
+        #rightmainunterdivtexte h3 {
+            color: var(--backgroundcolor);
+            font-size: var(--h3sizetitel);
+            font-weight: bold;
+            margin: 1rem;
+        }
+
+        #rightmainunterdivtexte p {
+            color: var(--backgroundcolor);
+            font-size: 1.25rem;
+            margin: 0rem 2rem;
+        }
+
+
+        .rightmainBild {
+            height: var(--BildundTextdibheight);
+            width: auto;
+        }
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Phone View Ansicht*/
+    @media(max-width:500px) {
+
+            /*variablen*/
+            :root {
+            --BildundTextdibheight: 23rem;
+            --h3sizetitel: 2rem;
+        }
+
+
+        #obermainkategoriediv {
+            max-width: 93%;
+            margin-left: auto;
+            margin-right: auto;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            gap: 1.5rem;
+        }
+
+        #leftmainkategoridiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 1.5rem;
+            width: 100%;
+
+            overflow: hidden;
+        }
+
+        .leftmainkategoridivs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            gap: 0rem;
+
+        }
+        #secondleftmainkategoridiv{
+            flex-direction: column-reverse;
+        }
+
+        .leftmainBilder {
+            height: auto;
+            width: 100%;
+        }
+
+        .textunterdivs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            width: 100%;
+
+            overflow: hidden;
+
+            color: white;
+
+            background-color: var(--backgroundcolor);
+            height: var(--BildundTextdibheight);
+        }
+
+        .textunterdivs h3 {
+            color: white;
+            font-size: var(--h3sizetitel);
+            font-weight: bold;
+            margin: 1rem;
+        }
+
+        .textunterdivPTAG {
+            color: white;
+            font-size: 1.34rem;
+            margin: 0rem 2rem;
+        }
+        #arrowspan{
+        padding-top: 0.6rem;
+        font-size: 2.8rem;
+        }
+
+
+
+
+        #rightmainkategoridiv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            gap: 0.5rem;
+            width: 100%;
+
+            overflow: hidden;
+
+            background-color: white;
+
+        }
+
+        #rightmainunterdivtexte {
+            height: var(--BildundTextdibheight);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            background-color: rgb(243, 243, 243);
+            color: var(--backgroundcolor);
+        }
+
+        #rightmainunterdivtexte h3 {
+            color: var(--backgroundcolor);
+            font-size: var(--h3sizetitel);
+            font-weight: bold;
+            margin: 1rem;
+        }
+
+        #rightmainunterdivtexte p {
+            color: var(--backgroundcolor);
+            font-size: 1.34rem;
+            margin: 0rem 2rem;
+        }
+
+
+        .rightmainBild {
+            height: auto;
+            width: 100%;
+        }
+
+
+
+
+
+
+
+    }
+</style>

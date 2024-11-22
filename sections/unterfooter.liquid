@@ -1,0 +1,132 @@
+<div id="unterfooter">
+
+
+    <div class="unterfooterdivs">
+        <p id="copyrightfooterunterdiv">&copy; <p id="currentyear">2024</p> <p id="Nameunterfooter">Kochbretter Straub</p></p>
+    </div>
+    <div class="unterfooterdivs">
+        <a id="linkunterfooterdesgineby" href="https://marcostraub.ch/">Webdesign by Marco Straub</a>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+{% schema %}
+    {
+        "name": "Unterfooter",
+        "settings": [
+         
+        ],
+        "presets": [
+            {
+                "name": "Unterfooter",
+                "category": "footer"
+            }
+        ]
+    }
+    {% endschema %}
+    
+
+<!--Styles Einstellungen-->
+<style>
+    #unterfooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+
+        gap: 12rem;
+
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        
+    }
+    .unterfooterdivs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 0.3rem;
+
+    }
+
+    #copyrightfooterunterdiv{
+        font-size: 1.1rem;
+        color: black;
+    }
+
+    #linkunterfooterdesgineby{
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: var(--maincolor);
+    }
+    #currentyear{
+    font-size: 1.1rem;
+    }
+    #Nameunterfooter{
+        font-size: 1.1rem;
+    }
+
+
+    @media(max-width:500px){
+        #unterfooter{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        max-width: 1600px;
+
+        gap: 0.3rem;
+        
+    }
+    .unterfooterdivs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    #copyrightfooterunterdiv{
+        font-size: 1.1rem;
+        color: black;
+    }
+
+    #linkunterfooterdesgineby{
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: var(--maincolor);
+    }
+    #currentyear{
+    font-size: 1.1rem;
+    }
+    #Nameunterfooter{
+        font-size: 1.1rem;
+    }
+    }
+   
+
+</style>
+
+
+<!--script für das current Year-->
+<script>
+    const currentyear = document.getElementById("currentyear");
+
+
+    const date = new Date();
+    const now = date.getFullYear();
+
+    currentyear.innerText = now;
+</script>
+

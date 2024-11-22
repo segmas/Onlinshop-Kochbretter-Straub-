@@ -1,0 +1,78 @@
+<!--HTML-->
+<div id="new_weihnachtsbanner">
+
+
+        <h2>{{ block.settings.titeltext_for_banner }}</h2>
+
+        <p>{{ block.settings.texttext_for_banner }}</p>
+
+
+
+</div>
+
+
+
+<!--Schema-->
+{% schema %}
+{
+    "name": "new_weihnachtsbanner",
+    "settings": [
+        
+        ],
+        "blocks": [
+            {
+                "name": "blocks",
+                "type": "titelbanner",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "titeltext_for_banner",
+                        "label": "titeltext for Banner"
+                    }
+                ]
+            },
+            {
+                "name": "blocks",
+                "type": "textbanner",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "texttext_for_banner",
+                        "label": "texttext for Banner"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+            {
+                "name": "new_weihnachtsbanner",
+                "blocks": [
+                    {
+                        "type": "titelbanner"
+                    },
+                    {
+                        "type": "textbanner"
+                    }
+                ]
+            }
+        ]
+}
+{% endschema %}
+
+
+
+<!--CSS-->
+<style>
+    #new_weihnachtsbanner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: {{ section.settinsg.new_weihnachtsbanner_width }}%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+
+</style>
