@@ -21,7 +21,7 @@
 
         <!--Link-->
         {%  if block.type ==  "infobanner_link"  %}  
-            <a href="{{ block.settings.infobanner_link_url }}">{{ block.settings.link_text_infobanner }}</a>
+            <a class="infobanner_link_atag" href="{{ block.settings.infobanner_link_url }}">{{ block.settings.link_text_infobanner }}</a>
         {% endif %}
 
 
@@ -177,6 +177,19 @@
     .infobanner_title_text{
         color: {{ section.settings.new_info_banner_color }};
         font-weight: bold; 
+    }
+
+
+
+
+
+
+    /*Link*/
+    .infobanner_link_atag{
+        text-decoration: none;
+        background-color: {{ section.settings.new_info_banner_backgroundcolor }};
+        color: {{ section.settings.new_info_banner_color }};
+        font-size: 3rem;
     }
 
 
