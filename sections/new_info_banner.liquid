@@ -3,9 +3,6 @@
 
     {% for block in section.blocks %}
 
-        <!--Bild-->
-        <img class="banner_img" src="{{ section.settings.banner_img |  image_url  }}" alt="">
-
         <!--Titel-->
         {% if block.type == "infobanner_titel" %}
             <h2 class="infobanner_title_text">{{ block.settings.infobanner_title_text }}</h2>
@@ -73,11 +70,6 @@
                 "type": "color",
                 "id": "new_info_banner_color",
                 "label": "Info Banner Color"
-            },
-            {
-                "type": "image_picker",
-                "id": "banner_img",
-                "label": "Banner Img"
             },
             {
                 "type": "range",
@@ -191,15 +183,6 @@
         position: relative;
     }
 
-    /*Bild*/
-    .banner_img{
-        width: 18rem;
-        position: absolute;
-        right: -9rem;
-        top: -7rem;
-        z-index: 13;
-    }
-
     /*Titel*/
     .infobanner_title_text{
         text-align: center;
@@ -271,16 +254,6 @@
 
         position: relative;
     }
-
-    /*Bild*/
-    .banner_img{
-        width: 18rem;
-        position: absolute;
-        right: -9rem;
-        top: -7rem;
-        z-index: 13;
-    }
-
     /*Titel*/
     .infobanner_title_text{
         text-align: left;
