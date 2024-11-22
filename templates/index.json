@@ -125,6 +125,26 @@
         "padding_bottom": 32
       }
     },
+    "kategoriauswahl_7Hc9Bj": {
+      "type": "Kategoriauswahl",
+      "settings": {
+        "arrowspanright1": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/arrowleftSpanwhite.webp?v=1719988608",
+        "arrowspanright2": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/arrowleftSpanwhite.webp?v=1719988608",
+        "arrowspanright3": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/arrowleftSpanblack.webp?v=1719988608",
+        "Kategorie1Titel": "Schneidebretter mit Füssen",
+        "Kategorie1Text": "Unsere Schneidebretter mit Füßen bieten eine stabile Arbeitsfläche, die das Schneiden erleichtert und durch das natürliche Material Holz die Hygiene in der Küche fördert.",
+        "Kategorie1Bild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_7029_c54d1161-f883-4c4a-8ea6-7e3635ec3c46.jpg?v=1693244785",
+        "Kategorie1Linksrc": "shopify://collections/schneidebretter-mit-fussen",
+        "Kategorie2Titel": "Schneidebretter mit Griff",
+        "Kategorie2Text": "Unsere Schneidebretter mit Griff ermöglichen einen einfachen Transport und eine bequeme Handhabung, was die Effizienz und den Komfort beim Kochen erheblich steigert.",
+        "Kategorie2Bild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_9303.jpg?v=1696776111",
+        "Kategorie2Linksrc": "shopify://collections/schneidebretter-mit-griff",
+        "Kategorie3Titel": "Geschenkbretter",
+        "Kategorie3Text": "Unsere Geschenkbretter sind dekorative und personalisierte Schneidebretter, die sich<strong> perfekt als einzigartige und praktische Geschenkidee</strong> für verschiedenste Anlässe eignen.",
+        "Kategorie3Bild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_2231_1.jpg?v=1699804165",
+        "Kategorie3Linksrc": "shopify://collections/geschenk-bretter"
+      }
+    },
     "featured_collection_BkCifn": {
       "type": "featured-collection",
       "settings": {
@@ -151,26 +171,6 @@
         "swipe_on_mobile": true,
         "padding_top": 20,
         "padding_bottom": 32
-      }
-    },
-    "kategoriauswahl_7Hc9Bj": {
-      "type": "Kategoriauswahl",
-      "settings": {
-        "arrowspanright1": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/arrowleftSpanwhite.webp?v=1719988608",
-        "arrowspanright2": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/arrowleftSpanwhite.webp?v=1719988608",
-        "arrowspanright3": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/arrowleftSpanblack.webp?v=1719988608",
-        "Kategorie1Titel": "Schneidebretter mit Füssen",
-        "Kategorie1Text": "Unsere Schneidebretter mit Füßen bieten eine stabile Arbeitsfläche, die das Schneiden erleichtert und durch das natürliche Material Holz die Hygiene in der Küche fördert.",
-        "Kategorie1Bild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_7029_c54d1161-f883-4c4a-8ea6-7e3635ec3c46.jpg?v=1693244785",
-        "Kategorie1Linksrc": "shopify://collections/schneidebretter-mit-fussen",
-        "Kategorie2Titel": "Schneidebretter mit Griff",
-        "Kategorie2Text": "Unsere Schneidebretter mit Griff ermöglichen einen einfachen Transport und eine bequeme Handhabung, was die Effizienz und den Komfort beim Kochen erheblich steigert.",
-        "Kategorie2Bild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_9303.jpg?v=1696776111",
-        "Kategorie2Linksrc": "shopify://collections/schneidebretter-mit-griff",
-        "Kategorie3Titel": "Geschenkbretter",
-        "Kategorie3Text": "Unsere Geschenkbretter sind dekorative und personalisierte Schneidebretter, die sich<strong> perfekt als einzigartige und praktische Geschenkidee</strong> für verschiedenste Anlässe eignen.",
-        "Kategorie3Bild": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/IMG_2231_1.jpg?v=1699804165",
-        "Kategorie3Linksrc": "shopify://collections/geschenk-bretter"
       }
     },
     "counterdiv_VjCfjy": {
@@ -360,8 +360,8 @@
     "img_slider_Bn3EC8",
     "new_info_banner_3er87g",
     "featured_collection",
-    "featured_collection_BkCifn",
     "kategoriauswahl_7Hc9Bj",
+    "featured_collection_BkCifn",
     "counterdiv_VjCfjy",
     "gravurenseitediv1_tCJM3B",
     "gravuren_VXTVJ6",
