@@ -42,6 +42,11 @@
         "name": "new_info_banner",
         "settings": [
             {
+                "type": "image_picker",
+                "id": "background_image",
+                "label": "background Image"
+            },
+            {
                 "type": "range",
                 "id": "new_info_banner_width",
                 "label": "Info Banner Width",
@@ -168,11 +173,12 @@
         margin-top: 9rem;
         margin-bottom: 9rem;
 
+        background-image: url( "{{ section.settings.background_image }}" );
+
         padding-top: {{ section.settings.new_info_banner_padding_top_bottom }}rem;
         padding-bottom: {{ section.settings.new_info_banner_padding_top_bottom }}rem;
 
-        background-color: {{ section.settings.new_info_banner_backgroundcolor }};
-
+        /* background-color: {{ section.settings.new_info_banner_backgroundcolor }}; */
        color: {{ section.settings.new_info_banner_color }};
         
         width: {{ section.settings.new_info_banner_width }}%;
@@ -217,6 +223,7 @@
     .infobanner_link_atag:hover{
         background-color: {{ section.settings.new_info_banner_backgroundcolor }};
         color: {{ section.settings.new_info_banner_color}};
+        border: solid 1px {{ section.settings.new_info_banner_color }};
     }
 
 
