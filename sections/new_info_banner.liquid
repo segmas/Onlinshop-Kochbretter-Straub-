@@ -43,6 +43,15 @@
                 "default": 65
             },
             {
+                "type": "range",
+                "id": "new_info_banner_padding_top_bottom",
+                "label": "Info Banner Padding Top Bottom",
+                "max": 10,
+                "min": 0,
+                "step": 1,
+                "default": 2
+            },
+            {
                 "type": "color",
                 "id": "new_info_banner_backgroundcolor",
                 "label": "Info Banner Backgroundcolor"
@@ -106,6 +115,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        padding-top: {{ section.settings.new_info_banner_padding_top_bottom }}rem;
+        padding-bottom: {{ section.settings.new_info_banner_padding_top_bottom }}rem;
 
         background-color: {{ section.settings.new_info_banner_backgroundcolor }};
         
