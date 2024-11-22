@@ -1,6 +1,17 @@
 <!--HTML-->
 <div id="new_info_banner">
 
+    {% for block in section.blocks %}
+        <!--Titel-->
+        {% if block.type == "infobanner_titel" %}
+            <h2>{{ block.settings.infobanner_titel }}</h2>
+        {% endif %}
+
+
+
+        
+    {% endfor %}
+
 </div>
 
 
@@ -13,9 +24,29 @@
         "settings": [
  
         ],
+        "blocks": [
+            {
+                "name": "infobanner_titel",
+                "type": "infobanner_titel",
+                "limit": 1,
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "infobanner_titel",
+                        "label": "Info Banner Titel"
+                    }
+                ]
+            }
+        ],
         "presets": [
             {
-                "name": "new_info_banner"
+                "name": "new_info_banner",
+                "blocks": [
+                    {
+                        "type": "infobanner_titel"
+                    }
+                ]
+
             }
         ]
     }
