@@ -1,28 +1,28 @@
 <!--HTML-->
 <div id="new_weihnachtsbanner">
-    <div id="new_weihnachtsbanner">
+    <div id="new_weihnachtsbanner_content">
         {% for block in section.blocks %}
             {% if block.type == "titelbanner" %}
-                <h2>{{ block.settings.titeltext_for_banner }}</h2>
+                <h2>{{ block.settings.title_text }}</h2>
             {% elsif block.type == "textbanner" %}
-                <p>{{ block.settings.texttext_for_banner }}</p>
+                <p>{{ block.settings.subtitle_text }}</p>
             {% endif %}
         {% endfor %}
     </div>
-    
 </div>
+
 
 
 
 <!--Schema-->
 {% schema %}
-{
-    "name": "new_weihnachtsbanner",
-    "settings": [
+    {
+        "name": "new_weihnachtsbanner",
+        "settings": [
             {
                 "type": "range",
                 "id": "new_weihnachtsbanner_width",
-                "label": "new Weihnachtsbanner width",
+                "label": "New Weihnachtsbanner Width",
                 "max": 100,
                 "min": 50,
                 "step": 2,
@@ -31,24 +31,26 @@
         ],
         "blocks": [
             {
-                "name": "block_titelbanner",
+                "name": "Title Banner",
                 "type": "titelbanner",
                 "settings": [
                     {
                         "type": "text",
-                        "id": "titeltext_for_banner",
-                        "label": "titeltext for Banner"
+                        "id": "title_text",
+                        "label": "Title Text for Banner",
+                        "default": "Merry Christmas!"
                     }
                 ]
             },
             {
-                "name": "block_textbanner",
+                "name": "Text Banner",
                 "type": "textbanner",
                 "settings": [
                     {
                         "type": "text",
-                        "id": "texttext_for_banner",
-                        "label": "texttext for Banner"
+                        "id": "subtitle_text",
+                        "label": "Subtitle Text for Banner",
+                        "default": "Enjoy the holiday season!"
                     }
                 ]
             }
@@ -66,8 +68,9 @@
                 ]
             }
         ]
-}
-{% endschema %}
+    }
+    {% endschema %}
+    
 
 
 
@@ -78,7 +81,7 @@
         align-items: center;
         justify-content: center;
 
-        width: {{ section.settings.new_weihnachtsbanner_width }}%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
