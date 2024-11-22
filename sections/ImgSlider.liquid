@@ -1,45 +1,40 @@
-
-
-
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
  <!-- IMg slider -->
  <div id="Slider">
+
+
+
     <img id="spanleft" src="{{ section.settings.SpanUrlLinkleft }}" alt="">
+
+
     <!-- Slide 1 -->
-    <div class="slides">
-      <img class="slidesIMG" src="{{section.settings.sliderbild1}}" alt="" />
-      <div id="SliderTiteleins" class="slidetextdiv">
-        <h3 >{{section.settings.slidertitel1}}</h3>
-        <p class="Desktopansichttexte">
-            {{section.settings.slidertext1}}
-        </p>
-        <p class="Handyansichttexte">{{section.settings.slidertexthandyansicht1}}</p>
-        <a class="linkslides" href="{{section.settings.sliderbuttonlink1}}">{{section.settings.sliderbutton1}}</a>
-      </div>
-    </div>
-    <!-- Slide 2 -->
-    <div class="slides">
-      <img class="slidesIMG" src={{section.settings.sliderbild2}} alt="" />
-      <div id="SliderTitelzwei" class="slidetextdiv">
-        <h3 >{{section.settings.slidertitel2}}</h3>
-        <p class="Desktopansichttexte">
-            {{section.settings.slidertext2}}
-        </p>
-        <p id="Handyansichttexte2" class="Handyansichttexte">{{section.settings.slidertexthandyansicht2}}</p>
-        <a class="linkslides" href="{{section.settings.sliderbuttonlink2}}">{{section.settings.sliderbutton2}}</a>
-      </div>
-    </div>
-    <!-- Slide 3 -->
-    <div class="slides">
-      <img class="slidesIMG" src={{section.settings.sliderbild3}} alt="" />
-      <div id="SliderTiteldrei" class="slidetextdiv">
-        <h3 >{{section.settings.slidertitel3}}</h3>
-        <p class="Desktopansichttexte">{{section.settings.slidertext3}}</p>
-        <p class="Handyansichttexte">{{section.settings.slidertexthandyansicht3}}</p>
-        <a class="linkslides" href="{{section.settings.sliderbuttonlink3}}">{{section.settings.sliderbutton3}}</a>
-      </div>
-    </div>
+     {% for block in section.blocks %}
+        <div class="slides">
+          {% if block.settings.slider_img %}
+            <picture class="slidesIMG">
+                <!-- Bild, das bei einer Breite von mindestens 550px geladen wird -->
+                <source  media="(min-width: 500px)" srcset="{{ block.settings.slider_img | image_url }}">
+                <!-- Bild, das bei einer Breite unter 550px geladen wird -->
+                <img class="slidesIMG_phone" src="{{ block.settings.slider_img_phone | image_url }}"   style="width: 100%;" alt="Bildbeschreibung">
+            </picture>
+          {% endif %}  
+          <div class="slidetextdiv">
+            <h3 >{{ block.settings.slider_titel }}</h3>
+            <p class="Desktopansichttexte">
+                {{ block.settings.slider_text }}
+            </p>
+            <p class="Handyansichttexte">{{ block.settings.slider_text_phone }}</p>
+            <a class="linkslides" href="{{ block.settings.slider_url_link }}">{{ block.settings.slider_btn_text }}</a>
+          </div>
+        </div>
+      {% endfor %}
+
+
+
+
+
+   
     <img  id="rightspan" src="{{section.settings.SpanUrlLinkRight}}" alt="">
   </div>
 
@@ -168,7 +163,49 @@
         "label": "Slider Text Handy Ansicht Drei",
         "id": "slidertexthandyansicht3"
     }
-
+    ],
+    "blocks": [
+      {
+        "name": "sliderblock",
+        "type": "slider_blocks",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "slider_img",
+            "label": "Slider Bild Desktop"
+          },
+          {
+            "type": "image_picker",
+            "id": "slider_img_phone",
+            "label": "Slider Bild Phone View"
+          },
+          {
+            "type": "text",
+            "id": "slider_titel",
+            "label": "Slider Titel"
+          },
+          {
+            "type": "text",
+            "id": "slider_text",
+            "label": "Slider Text"
+          },
+          {
+            "type": "text",
+            "id": "slider_text_phone",
+            "label": "Slider Text Phone"
+          },
+          {
+            "type": "url",
+            "id": "slider_url_link ",
+            "label": "slider Link URL"
+          },
+          {
+            "type": "text",
+            "id": "slider_btn_text",
+            "label": "Slider Button Text"
+          }
+        ]
+      }
     ],
     "presets": [
         {
@@ -180,55 +217,7 @@
 
 
 
-
-<!--
-<script>
-    
-
-const slides = document.querySelectorAll('.slides');
-let slideIndex = 0;
-
-function showSlides() {
-  slides.forEach(slide => {
-    slide.classList.remove('active');
-  });
-
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  }
-
-  slides[slideIndex].classList.add('active');
-}
-
-function plusSlides(i) {
-  slideIndex += i;
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  } else if (slideIndex < 0) {
-    slideIndex = slides.length - 1;
-  }
-  showSlides();
-}
-
-document.getElementById('spanleft').addEventListener('click', () => {
-  plusSlides(-1);
-});
-
-document.getElementById('rightspan').addEventListener('click', () => {
-  plusSlides(1);
-});
-
-showSlides(); // <-- Füge diese Zeile hinzu, um das erste Bild anzuzeigen
-setInterval(() => {
-  plusSlides(1);
-}, 7000);
-</script>
-
--->
-
 <!--Neues Script mit TouchE Events -->
-
-
 
 <script>
 const slidesContainer = document.getElementById('Slider');
