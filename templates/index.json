@@ -71,7 +71,7 @@
         "infobanner_rabattcode_jNHCHV": {
           "type": "infobanner_rabattcode",
           "settings": {
-            "infobanner_rabattcode_paragraph": "evefvevxsx"
+            "rabattcode_paragraph": ""
           }
         }
       },
@@ -80,7 +80,11 @@
         "infobanner_text_aijRh7",
         "infobanner_rabattcode_jNHCHV"
       ],
-      "settings": {}
+      "settings": {
+        "new_info_banner_width": 70,
+        "new_info_banner_padding_top_bottom": 2,
+        "new_info_banner_backgroundcolor": "#242833"
+      }
     },
     "featured_collection": {
       "type": "featured-collection",
