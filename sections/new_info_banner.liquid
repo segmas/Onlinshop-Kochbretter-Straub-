@@ -187,8 +187,8 @@
     .banner_img{
         width: 18rem;
         position: absolute;
-        right: 0rem;
-        top: 0rem;
+        right: -9rem;
+        top: -10rem;
         z-index: 13;
     }
 
@@ -212,6 +212,11 @@
         font-size: 3.2rem;
         font-weight: bold;
         padding: 0.5rem 2rem;
+        transition: 0.3s;
+    }
+    .infobanner_link_atag:hover{
+        background-color: {{ section.settings.new_info_banner_backgroundcolor }};
+        color: {{ section.settings.new_info_banner_color}};
     }
 
 
