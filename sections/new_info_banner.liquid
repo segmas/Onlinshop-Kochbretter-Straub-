@@ -5,12 +5,12 @@
 
         <!--Titel-->
         {% if block.type == "infobanner_titel" %}
-            <h2>{{ block.settings.infobanner_titel }}</h2>
+            <h2>{{ block.settings.infobanner_title_text }}</h2>
         {% endif %}
 
         <!--Text-->
         {% if block.type == "infobanner_text" %}
-            <p>{{ block.settings.infobanner_text }}</p>
+            <p>{{ block.settings.infobanner_paragraph_text }}</p>
         {% endif %}
 
     {% endfor %}
@@ -20,35 +20,34 @@
 
 
 
+
 <!--Schema-->
 {% schema %}
     {
         "name": "new_info_banner",
-        "settings": [
- 
-        ],
+        "settings": [],
         "blocks": [
             {
-                "name": "infobanner_titel",
+                "name": "Info Banner Title",
                 "type": "infobanner_titel",
                 "limit": 1,
                 "settings": [
                     {
                         "type": "text",
-                        "id": "infobanner_titel",
-                        "label": "Info Banner Titel"
+                        "id": "infobanner_title_text",
+                        "label": "Info Banner Title"
                     }
                 ]
             },
             {
-                "name": "infobanner_text",
+                "name": "Info Banner Text",
                 "type": "infobanner_text",
                 "limit": 2,
                 "settings": [
                     {
                         "type": "text",
-                        "id": "infobanner_text",
-                        "label": "Infobanner Text"
+                        "id": "infobanner_paragraph_text",
+                        "label": "Info Banner Text"
                     }
                 ]
             }
@@ -57,18 +56,14 @@
             {
                 "name": "new_info_banner",
                 "blocks": [
-                    {
-                        "type": "infobanner_titel"
-                    },
-                    {
-                        "type": "infobanner_text"
-                    }
+                    { "type": "infobanner_titel" },
+                    { "type": "infobanner_text" }
                 ]
-
             }
         ]
     }
     {% endschema %}
+    
     
 
 
