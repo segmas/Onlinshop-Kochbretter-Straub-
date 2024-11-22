@@ -13,13 +13,13 @@
 
         <!--Text-->
         {% if block.type == "infobanner_text" %}
-            <p>{{ block.settings.infobanner_paragraph_text }}</p>
+            <p style="font-size: 2.2rem;">{{ block.settings.infobanner_paragraph_text }}</p>
         {% endif %}
 
 
         <!--Rabatt Code-->
         {% if block.type == "infobanner_rabattcode" %}
-            <p>{{ block.settings.rabattcode_paragraph }}</p>
+            <p style="font-size: 2.2rem;">{{ block.settings.rabattcode_paragraph }}</p>
         {% endif %}
 
         <!--Link-->
@@ -165,13 +165,13 @@
         justify-content: center;
         flex-direction: column;
         
-        gap: 2rem;
+        gap: 2.5rem;
 
         padding-left: 2rem;
         padding-right: 2rem;
 
-        margin-top: 9rem;
-        margin-bottom: 9rem;
+        margin-top: 6rem;
+        margin-bottom: 6rem;
 
         background-image: url( "{{ section.settings.background_image |  image_url  }}" );
         background-size: cover;
