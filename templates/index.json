@@ -93,7 +93,8 @@
         "new_info_banner_width": 70,
         "new_info_banner_padding_top_bottom": 2,
         "new_info_banner_backgroundcolor": "#242833",
-        "new_info_banner_color": "#ffffff"
+        "new_info_banner_color": "#ffffff",
+        "banner_img": "shopify://shop_images/Chrstmas.webp"
       }
     },
     "featured_collection": {
