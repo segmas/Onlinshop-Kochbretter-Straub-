@@ -53,6 +53,21 @@
         "slidertexthandyansicht3": ""
       }
     },
+    "new_info_banner_3er87g": {
+      "type": "new_info_banner",
+      "blocks": {
+        "infobanner_titel_mUYEYR": {
+          "type": "infobanner_titel",
+          "settings": {
+            "infobanner_titel": "eded"
+          }
+        }
+      },
+      "block_order": [
+        "infobanner_titel_mUYEYR"
+      ],
+      "settings": {}
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -281,15 +296,12 @@
     "scroltop_4XhPyk": {
       "type": "scroltop",
       "settings": {}
-    },
-    "new_info_banner_3er87g": {
-      "type": "new_info_banner",
-      "settings": {}
     }
   },
   "order": [
     "ferien_FU8mFf",
     "img_slider_Bn3EC8",
+    "new_info_banner_3er87g",
     "featured_collection",
     "kategoriauswahl_7Hc9Bj",
     "counterdiv_VjCfjy",
@@ -302,7 +314,6 @@
     "holzarten_63awG7",
     "holzarten_zhxWej",
     "kontakt_iciRTg",
-    "scroltop_4XhPyk",
-    "new_info_banner_3er87g"
+    "scroltop_4XhPyk"
   ]
 }
