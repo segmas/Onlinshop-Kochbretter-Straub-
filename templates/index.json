@@ -91,7 +91,7 @@
       ],
       "settings": {
         "background_image": "shopify://shop_images/chruistmas.webp",
-        "new_info_banner_width": 80,
+        "new_info_banner_width": 76,
         "new_info_banner_padding_top_bottom": 5,
         "new_info_banner_backgroundcolor": "#970001",
         "new_info_banner_color": "#ffffff",
