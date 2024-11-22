@@ -2,11 +2,9 @@
 <div id="new_weihnachtsbanner">
 
 
-        <h2>{{ block.settings.titeltext_for_banner }}</h2>
+    <h2>{{ block.settings.titeltext_for_banner }}</h2>
 
-        <p>{{ block.settings.texttext_for_banner }}</p>
-
-
+    <p>{{ block.settings.texttext_for_banner }}</p>
 
 </div>
 
@@ -17,7 +15,15 @@
 {
     "name": "new_weihnachtsbanner",
     "settings": [
-        
+            {
+                "type": "range",
+                "id": "new_weihnachtsbanner_width",
+                "label": "new Weihnachtsbanner width",
+                "max": 100,
+                "min": 50,
+                "step": 2,
+                "default": 65
+            }
         ],
         "blocks": [
             {
@@ -68,7 +74,7 @@
         align-items: center;
         justify-content: center;
 
-        width: {{ section.settinsg.new_weihnachtsbanner_width }}%;
+        width: {{ section.settings.new_weihnachtsbanner_width }}%;
         margin-left: auto;
         margin-right: auto;
     }
