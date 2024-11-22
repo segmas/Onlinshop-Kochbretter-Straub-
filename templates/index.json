@@ -79,7 +79,7 @@
           "type": "infobanner_link",
           "settings": {
             "link_text_infobanner": "Jetzt zum Sortiment",
-            "infobanner_link": "shopify://collections/all"
+            "infobanner_link_url": "shopify://collections/all"
           }
         }
       },
