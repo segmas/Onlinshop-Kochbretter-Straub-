@@ -1,11 +1,9 @@
 <!--HTML-->
 <div id="new_weihnachtsbanner">
-
-
-    <h2>{{ block.settings.titeltext_for_banner }}</h2>
-
-    <p>{{ block.settings.texttext_for_banner }}</p>
-
+    {% for block in section.blocks %}
+        <h2>{{ block.settings.titeltext_for_banner }}</h2>
+        <p>{{ block.settings.texttext_for_banner }}</p>
+    {% endfor %}
 </div>
 
 
