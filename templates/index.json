@@ -62,11 +62,10 @@
             "infobanner_title_text": "10 CHF Rabatt für ihr Weihnachtsgeschenk"
           }
         },
-        "infobanner_rabattcode_jNHCHV": {
-          "type": "infobanner_rabattcode",
-          "disabled": true,
+        "infobanner_text_mCxyNT": {
+          "type": "infobanner_text",
           "settings": {
-            "rabattcode_paragraph": "mit dem Code :  KOCHBRETTER10"
+            "infobanner_paragraph_text": "Auf ausgewählte Produkte"
           }
         },
         "infobanner_text_aijRh7": {
@@ -85,7 +84,7 @@
       },
       "block_order": [
         "infobanner_titel_mUYEYR",
-        "infobanner_rabattcode_jNHCHV",
+        "infobanner_text_mCxyNT",
         "infobanner_text_aijRh7",
         "infobanner_link_B8J9TH"
       ],
