@@ -67,6 +67,9 @@
             {% if card_product.tags contains "Rabatte" %}
               <span class="product-badge new">Reduziert</span>
             {% endif %}
+            {% if card_product.tags contains "Weihnachtsrabatt" %}
+              <span class="product-badge new">Weihnachtsrabatt</span>
+            {% endif %}
       
             <style>
               .product-badge.new {
