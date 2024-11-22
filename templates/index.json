@@ -39,10 +39,10 @@
           "type": "slider_blocks",
           "settings": {
             "slider_img": "shopify://shop_images/markt4_2_c8cb1215-0541-4671-9724-63b67fd78a89.jpg",
-            "slider_titel": "",
+            "slider_titel": "Weihnachtsmarkt 2024",
             "slider_text": "",
             "slider_text_phone": "",
-            "slider_url_link": "",
+            "slider_url_link": "shopify://pages/messen-und-weihnachtsmarkt",
             "slider_btn_text": ""
           }
         }
