@@ -59,12 +59,19 @@
         "infobanner_titel_mUYEYR": {
           "type": "infobanner_titel",
           "settings": {
-            "infobanner_titel": "eded"
+            "infobanner_title_text": "erfefefefe"
+          }
+        },
+        "infobanner_text_aijRh7": {
+          "type": "infobanner_text",
+          "settings": {
+            "infobanner_paragraph_text": "ferf"
           }
         }
       },
       "block_order": [
-        "infobanner_titel_mUYEYR"
+        "infobanner_titel_mUYEYR",
+        "infobanner_text_aijRh7"
       ],
       "settings": {}
     },
