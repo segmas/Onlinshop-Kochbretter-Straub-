@@ -34,10 +34,22 @@
             "slider_url_link": "https://konfigurator.kochbretterstraub.ch/",
             "slider_btn_text": "Jetzt selber gestalten"
           }
+        },
+        "slider_blocks_WPLQJk": {
+          "type": "slider_blocks",
+          "settings": {
+            "slider_img": "shopify://shop_images/markt4_2_c8cb1215-0541-4671-9724-63b67fd78a89.jpg",
+            "slider_titel": "",
+            "slider_text": "",
+            "slider_text_phone": "",
+            "slider_url_link": "",
+            "slider_btn_text": ""
+          }
         }
       },
       "block_order": [
-        "slider_blocks_PNkN3k"
+        "slider_blocks_PNkN3k",
+        "slider_blocks_WPLQJk"
       ],
       "custom_css": [
         "#SliderTiteleins {left: 13rem;}",
