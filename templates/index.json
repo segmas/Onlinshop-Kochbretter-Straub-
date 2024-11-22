@@ -284,6 +284,17 @@
     },
     "new_info_banner_3er87g": {
       "type": "new_info_banner",
+      "blocks": {
+        "infobanner_titel_mUYEYR": {
+          "type": "infobanner_titel",
+          "settings": {
+            "infobanner_titel": "eded"
+          }
+        }
+      },
+      "block_order": [
+        "infobanner_titel_mUYEYR"
+      ],
       "settings": {}
     }
   },
