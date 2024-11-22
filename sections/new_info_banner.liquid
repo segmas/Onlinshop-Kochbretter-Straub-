@@ -5,7 +5,7 @@
 
         <!--Titel-->
         {% if block.type == "infobanner_titel" %}
-            <h2 class="infobanner_title_text">{{ block.settings.infobanner_title_text }}</h2>
+            <h2 style="font-size: {{ block.settings.infobanner_title_text_size }}rem;" class="infobanner_title_text">{{ block.settings.infobanner_title_text }}</h2>
         {% endif %}
 
         <!--Text-->
@@ -154,8 +154,8 @@
 
     /*Titel*/
     .infobanner_title_text{
-        font-size: {{ block.settings.infobanner_title_text_size }}rem;
         color: {{ section.settings.new_info_banner_color }};
+        font-weight: bold; 
     }
 
 
