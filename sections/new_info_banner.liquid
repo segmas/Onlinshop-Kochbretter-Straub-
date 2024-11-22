@@ -3,6 +3,9 @@
 
     {% for block in section.blocks %}
 
+        <!--Bild-->
+        <img class="banner_img" src="{{ section.settings.banner_img |  image_url  }}" alt="">
+
         <!--Titel-->
         {% if block.type == "infobanner_titel" %}
             <h2 style="font-size: {{ block.settings.infobanner_title_text_size }}rem;" class="infobanner_title_text">{{ block.settings.infobanner_title_text }}</h2>
@@ -65,6 +68,11 @@
                 "type": "color",
                 "id": "new_info_banner_color",
                 "label": "Info Banner Color"
+            },
+            {
+                "type": "image_picker",
+                "id": "banner_img",
+                "label": "Banner Img"
             }
         ],
         "blocks": [
@@ -171,6 +179,17 @@
 
         margin-left: auto;
         margin-right: auto;
+
+        position: relative;
+    }
+
+    /*Bild*/
+    .banner_img{
+        width: 20rem;
+        position: absolute;
+        right: 0rem;
+        top: 0rem;
+        z-index: 13;
     }
 
     /*Titel*/
@@ -186,10 +205,11 @@
 
     /*Link*/
     .infobanner_link_atag{
+        font-style: italic;
         text-decoration: none;
         background-color: {{ section.settings.new_info_banner_color }};
         color: {{ section.settings.new_info_banner_backgroundcolor}};
-        font-size: 3rem;
+        font-size: 3.2rem;
         font-weight: bold;
         padding: 0.5rem 2rem;
     }
