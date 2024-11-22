@@ -281,48 +281,6 @@
     "scroltop_4XhPyk": {
       "type": "scroltop",
       "settings": {}
-    },
-    "rich_text_bB4kMj": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_LMXLz7": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_jMJVpj": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "button_z6BM6D": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_LMXLz7",
-        "text_jMJVpj",
-        "button_z6BM6D"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -340,7 +298,6 @@
     "holzarten_63awG7",
     "holzarten_zhxWej",
     "kontakt_iciRTg",
-    "scroltop_4XhPyk",
-    "rich_text_bB4kMj"
+    "scroltop_4XhPyk"
   ]
 }
