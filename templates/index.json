@@ -281,6 +281,10 @@
     "scroltop_4XhPyk": {
       "type": "scroltop",
       "settings": {}
+    },
+    "new_info_banner_3er87g": {
+      "type": "new_info_banner",
+      "settings": {}
     }
   },
   "order": [
@@ -298,6 +302,7 @@
     "holzarten_63awG7",
     "holzarten_zhxWej",
     "kontakt_iciRTg",
-    "scroltop_4XhPyk"
+    "scroltop_4XhPyk",
+    "new_info_banner_3er87g"
   ]
 }
