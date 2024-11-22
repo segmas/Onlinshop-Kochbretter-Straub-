@@ -19,6 +19,11 @@
             <p>{{ block.settings.rabattcode_paragraph }}</p>
         {% endif %}
 
+        <!--Link-->
+        {%  if block.type ==  "infobanner_link"  %}  
+            <a href="{{ section.settings.infobanner_link_url }}">{{ block.settings.link_text_infobanner }}</a>
+        {% endif %}
+
 
 
 
@@ -102,6 +107,22 @@
                         "type": "text",
                         "id": "rabattcode_paragraph",
                         "label": "Info Banner Rabattcode"
+                    }
+                ]
+            },
+            {
+                "name": "Info Banner Link",
+                "type": "infobanner_link",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "link_text_infobanner",
+                        "label": "Link Text"
+                    },
+                    {
+                        "type": "url",
+                        "id": "infobanner_link",
+                        "label": "Infobanner Link"
                     }
                 ]
             }
