@@ -59,7 +59,8 @@
         "infobanner_titel_mUYEYR": {
           "type": "infobanner_titel",
           "settings": {
-            "infobanner_title_text": "erfefefefe"
+            "infobanner_title_text": "erfefefefe",
+            "infobanner_title_text_size": 4.2
           }
         },
         "infobanner_text_aijRh7": {
@@ -83,7 +84,8 @@
       "settings": {
         "new_info_banner_width": 70,
         "new_info_banner_padding_top_bottom": 2,
-        "new_info_banner_backgroundcolor": "#242833"
+        "new_info_banner_backgroundcolor": "#242833",
+        "new_info_banner_color": "#ffffff"
       }
     },
     "featured_collection": {
