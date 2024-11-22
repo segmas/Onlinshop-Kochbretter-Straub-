@@ -67,11 +67,18 @@
           "settings": {
             "infobanner_paragraph_text": "ferf"
           }
+        },
+        "infobanner_rabattcode_jNHCHV": {
+          "type": "infobanner_rabattcode",
+          "settings": {
+            "infobanner_rabattcode_paragraph": "evefvev"
+          }
         }
       },
       "block_order": [
         "infobanner_titel_mUYEYR",
-        "infobanner_text_aijRh7"
+        "infobanner_text_aijRh7",
+        "infobanner_rabattcode_jNHCHV"
       ],
       "settings": {}
     },
