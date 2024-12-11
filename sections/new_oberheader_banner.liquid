@@ -1,10 +1,11 @@
 <!--HTML-->
-    <div id="new_oberheader_banner">
-        <div class="scrolling-text">
-            Alle Bestellungen bis zum 20. Dezember werden rechtzeitig zu Weihnachten geliefert!
-        </div>
+<div id="new_oberheader_banner">
+    <div class="scrolling-text">
+        <img src="" alt="Weihnachtsbild Vorne" style="height:20px; margin-right:10px;">
+        Alle Bestellungen bis zum 20. Dezember werden rechtzeitig zu Weihnachten geliefert!
+        <img src="" alt="Weihnachtsbild Hinten" style="height:20px; margin-left:10px;">
     </div>
-
+</div>
 
 <!--Schema-->
 {% schema %}
@@ -18,13 +19,12 @@
             "name": "new_oberheader_banner"
         }
     ]
-    }
+}
 {% endschema %}
 
 
 <!--CSS-->
 <style>
-
     #new_oberheader_banner {
         position: fixed;
         top: 0;
@@ -41,9 +41,8 @@
     .scrolling-text {
         display: inline-block;
         white-space: nowrap;
-        /* Start die Animation ausserhalb des sichtbaren Bereichs rechts */
         transform: translateX(100%);
-        animation: marquee 15s linear infinite;
+        animation: marquee 10s linear infinite;
         padding-right: 100%;
     }
 
@@ -51,7 +50,6 @@
         0% {
             transform: translateX(100%);
         }
-
         100% {
             transform: translateX(-100%);
         }
