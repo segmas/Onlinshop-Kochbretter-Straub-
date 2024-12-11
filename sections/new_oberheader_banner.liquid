@@ -2,7 +2,7 @@
 <div id="new_oberheader_banner">
     <div class="scrolling-text">
         <img class="banner_imgs" src="{{ section.settings.banner_imgs |  image_url  }}" alt="Weihnachtsbild Vorne">
-        Alle Bestellungen bis zum 20. Dezember werden rechtzeitig zu Weihnachten geliefert!
+        Alle Bestellungen bis zum 18. Dezember werden rechtzeitig zu Weihnachten geliefert !!!
         <img class="banner_imgs" src="{{ section.settings.banner_imgs | image_url  }}" alt="Weihnachtsbild Hinten" >
     </div>
 </div>
@@ -26,16 +26,18 @@
 }
 {% endschema %}
 
-
 <!--CSS-->
 <style>
+    :root{
+        --bannerbackgroundcolor: #0e0e0e; 
+    }
     #new_oberheader_banner {
         top: 0;
         width: 100%;
-        background: #000;
+        background: var(--bannerbackgroundcolor);
         color: #fff;
         overflow: hidden;
-        height: 34px;
+        height: 30px;
         display: flex;
         align-items: center;
         z-index: 9999;
@@ -45,21 +47,21 @@
         display: inline-block;
         white-space: nowrap;
         transform: translateX(100%);
-        animation: marquee 20s linear infinite;
+        animation: marquee 19s linear infinite; /* Geschwindigkeit angepasst */
         padding-right: 100%;
     }
     .banner_imgs{
-        height:20px;
+        height:17px;
         margin-left:10px;
         margin-right: 10px;
     }
 
     @keyframes marquee {
         0% {
-            transform: translateX(100%);
+            transform: translateX(90%);
         }
         100% {
-            transform: translateX(-100%);
+            transform: translateX(-90%);
         }
     }
 </style>
