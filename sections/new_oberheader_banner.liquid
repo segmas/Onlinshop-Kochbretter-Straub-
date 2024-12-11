@@ -1,9 +1,16 @@
 <!--HTML-->
 <div id="new_oberheader_banner">
     <div class="scrolling-text">
-        <img class="banner_imgs" src="{{ section.settings.banner_imgs |  image_url  }}" alt="Weihnachtsbild Vorne">
-        Alle Bestellungen bis zum 18. Dezember werden rechtzeitig zu Weihnachten geliefert !!!
-        <img class="banner_imgs" src="{{ section.settings.banner_imgs | image_url  }}" alt="Weihnachtsbild Hinten" >
+        <span class="scrolling-content">
+            <img class="banner_imgs" src="{{ section.settings.banner_imgs | image_url }}" alt="Weihnachtsbild Vorne">
+            Alle Bestellungen bis zum 18. Dezember werden rechtzeitig zu Weihnachten geliefert !!!
+            <img class="banner_imgs" src="{{ section.settings.banner_imgs | image_url }}" alt="Weihnachtsbild Hinten">
+        </span>
+        <span class="scrolling-content">
+            <img class="banner_imgs" src="{{ section.settings.banner_imgs | image_url }}" alt="Weihnachtsbild Vorne">
+            Alle Bestellungen bis zum 18. Dezember werden rechtzeitig zu Weihnachten geliefert !!!
+            <img class="banner_imgs" src="{{ section.settings.banner_imgs | image_url }}" alt="Weihnachtsbild Hinten">
+        </span>
     </div>
 </div>
 
@@ -28,9 +35,10 @@
 
 <!--CSS-->
 <style>
-    :root{
+    :root {
         --bannerbackgroundcolor: #0e0e0e; 
     }
+
     #new_oberheader_banner {
         top: 0;
         width: 100%;
@@ -44,24 +52,29 @@
     }
 
     .scrolling-text {
-        display: inline-block;
+        display: flex;
         white-space: nowrap;
-        transform: translateX(80%);
-        animation: marquee 19s linear infinite; /* Geschwindigkeit angepasst */
-        padding-right: 0%;
+        animation: marquee 10s linear infinite; /* Geschwindigkeit angepasst */
     }
-    .banner_imgs{
-        height:17px;
-        margin-left:10px;
+
+    .scrolling-content {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 50px; /* Abstand zwischen den doppelten Blöcken */
+    }
+
+    .banner_imgs {
+        height: 17px;
+        margin-left: 10px;
         margin-right: 10px;
     }
 
     @keyframes marquee {
         0% {
-            transform: translateX(80%);
+            transform: translateX(0%);
         }
         100% {
-            transform: translateX(-30%);
+            transform: translateX(-100%);
         }
     }
 </style>
