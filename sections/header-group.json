@@ -11,6 +11,12 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "new_oberheader_banner_mNc9CW": {
+      "type": "new_oberheader_banner",
+      "settings": {
+        "banner_imgs": "shopify://shop_images/Chrstmas_f192c0b1-4f1e-4530-96f9-3fa7afae095f.webp"
+      }
+    },
     "oberheader_Q4nE63": {
       "type": "oberheader",
       "custom_css": [],
@@ -46,6 +52,7 @@
     }
   },
   "order": [
+    "new_oberheader_banner_mNc9CW",
     "oberheader_Q4nE63",
     "header"
   ]
