@@ -1,9 +1,9 @@
 <!--HTML-->
 <div id="new_oberheader_banner">
     <div class="scrolling-text">
-        <img src="" alt="Weihnachtsbild Vorne" style="height:20px; margin-right:10px;">
+        <img class="banner_imgs" src="{{ section.settings.banner_imgs |  image_url  }}" alt="Weihnachtsbild Vorne">
         Alle Bestellungen bis zum 20. Dezember werden rechtzeitig zu Weihnachten geliefert!
-        <img src="" alt="Weihnachtsbild Hinten" style="height:20px; margin-left:10px;">
+        <img class="banner_imgs" src="{{ section.settings.banner_imgs | image_url  }}" alt="Weihnachtsbild Hinten" >
     </div>
 </div>
 
@@ -12,7 +12,11 @@
 {
     "name": "new_oberheader_banner",
     "settings": [
-
+        {
+            "type": "image_picker",
+            "id": "banner_imgs",
+            "label": "Bilder"
+        }
     ],
     "presets": [
         {
@@ -44,6 +48,10 @@
         transform: translateX(100%);
         animation: marquee 10s linear infinite;
         padding-right: 100%;
+    }
+    .banner_imgs{
+        height:20px;
+        margin-left:10px;
     }
 
     @keyframes marquee {
