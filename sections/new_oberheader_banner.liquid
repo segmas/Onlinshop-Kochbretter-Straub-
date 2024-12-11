@@ -2,7 +2,7 @@
 <div id="new_oberheader_banner">
     <div class="scrolling-text">
         <img class="banner_imgs" src="{{ section.settings.banner_imgs |  image_url  }}" alt="Weihnachtsbild Vorne">
-        Alle Bestellungen bis zum 18. Dezember werden rechtzeitig zu Weihnachten geliefert !!!
+            Alle Bestellungen bis zum 18. Dezember werden rechtzeitig zu Weihnachten geliefert !!!
         <img class="banner_imgs" src="{{ section.settings.banner_imgs | image_url  }}" alt="Weihnachtsbild Hinten" >
     </div>
 </div>
@@ -46,9 +46,9 @@
     .scrolling-text {
         display: inline-block;
         white-space: nowrap;
-        transform: translateX(80%);
+        transform: translateX(100%);
         animation: marquee 19s linear infinite; /* Geschwindigkeit angepasst */
-        padding-right: 0%;
+        padding-right: 100%;
     }
     .banner_imgs{
         height:17px;
@@ -58,7 +58,7 @@
 
     @keyframes marquee {
         0% {
-            transform: translateX(80%);
+            transform: translateX(100%);
         }
         100% {
             transform: translateX(-30%);
