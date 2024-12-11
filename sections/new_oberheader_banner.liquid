@@ -1,0 +1,70 @@
+<!--HTML-->
+<div id="new_oberheader_banner">
+
+    <div class="announcement-bar">
+        <div class="scrolling-text">
+            Alle Bestellungen bis zum 20. Dezember werden rechtzeitig zu Weihnachten geliefert!
+        </div>
+    </div>
+
+</div>
+
+
+<!--Schema-->
+{% schema %}
+{
+    "name": "new_oberheader_banner",
+    "settings": [
+
+    ],
+    "presets": [
+        {
+            "name": "new_oberheader_banner"
+        }
+    ]
+    }
+{% endschema %}
+
+
+<!--CSS-->
+<style>
+    #new_oberheader_banner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .announcement-bar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #000;
+        color: #fff;
+        overflow: hidden;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .scrolling-text {
+        display: inline-block;
+        white-space: nowrap;
+        /* Start die Animation ausserhalb des sichtbaren Bereichs rechts */
+        transform: translateX(100%);
+        animation: marquee 10s linear infinite;
+        padding-right: 100%;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+</style>
