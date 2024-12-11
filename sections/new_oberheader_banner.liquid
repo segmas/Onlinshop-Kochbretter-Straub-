@@ -3,7 +3,7 @@
     <div class="scrolling-text">
         <img class="banner_imgs" src="{{ section.settings.banner_imgs |  image_url  }}" alt="Weihnachtsbild Vorne">
         Alle Bestellungen bis zum 18. Dezember werden rechtzeitig zu Weihnachten geliefert !!!
-        <img class="banner_imgs" src="{{ section.settings.banner_imgs | image_url  }}" alt="Weihnachtsbild Hinten" >
+        <img class="banner_imgs" src="{{ section.settings.banner_imgs | image_url  }}" alt="Weihnachtsbild Hinten">
     </div>
 </div>
 
@@ -46,22 +46,25 @@
     .scrolling-text {
         display: inline-block;
         white-space: nowrap;
-        transform: translateX(80%);
+        transform: translateX(0);
         animation: marquee 21s linear infinite; /* Geschwindigkeit angepasst */
         padding-right: 100%;
     }
-    .banner_imgs{
-        height:17px;
-        margin-left:10px;
+    .banner_imgs {
+        height: 17px;
+        margin-left: 10px;
         margin-right: 10px;
     }
 
     @keyframes marquee {
         0% {
-            transform: translateX(80%);
+            transform: translateX(0); /* Start in der Mitte */
+        }
+        50% {
+            transform: translateX(-100%); /* Bewegung nach links */
         }
         100% {
-            transform: translateX(-80%);
+            transform: translateX(100%); /* Zurück nach rechts */
         }
     }
 </style>
