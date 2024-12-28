@@ -13,6 +13,7 @@
   "sections": {
     "new_oberheader_banner_mNc9CW": {
       "type": "new_oberheader_banner",
+      "disabled": true,
       "settings": {
         "banner_imgs": "shopify://shop_images/Chrstmas_f192c0b1-4f1e-4530-96f9-3fa7afae095f.webp"
       }
