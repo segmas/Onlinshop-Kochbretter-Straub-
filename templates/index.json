@@ -154,6 +154,7 @@
     },
     "featured_collection_BkCifn": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Weihnachts Aktion",
         "heading_size": "h2",
