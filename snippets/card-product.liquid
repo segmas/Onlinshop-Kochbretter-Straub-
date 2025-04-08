@@ -59,48 +59,6 @@
 
 
 
-         <!--New Tag einbauen -->
-            {% if card_product.tags contains "TOP" %}
-              <span class="product-badge new">TOP Produkt</span>
-            {% endif %}
-
-            {% if card_product.tags contains "Rabatte" %}
-              <span class="product-badge new">Reduziert</span>
-            {% endif %}
-            {% if card_product.tags contains "Weihnachtsrabatt" %}
-              <span class="product-badge new">Weihnachtsrabatt</span>
-            {% endif %}
-      
-            <style>
-              .product-badge.new {
-                  z-index: 10;
-                  position: absolute;
-                  top: 10px;
-                  left: 10px;
-                  background: linear-gradient(to right, #b20a07, #450001 );
-                  color: #ffffff;
-                  padding: 5px 10px;
-                  font-size: 13px;
-                  font-weight: bold;
-                  border-radius: 3px;
-                  text-transform: uppercase;
-                }
-              @media(max-width:500px){
-                    .product-badge.new {
-                  z-index: 10;
-                  position: absolute;
-                  top: 9px;
-                  left: 9px;
-                  background: linear-gradient(to right, #b20a07, #450001 );
-                  color: #ffffff;
-                  padding: 3px 5px;
-                  font-size: 12px;
-                  font-weight: bold;
-                  border-radius: 2px;
-                  text-transform: uppercase;
-                }
-              }
-            </style>
 
 
 
