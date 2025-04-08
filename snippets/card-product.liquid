@@ -70,6 +70,9 @@
             {% if card_product.tags contains "Weihnachtsrabatt" %}
               <span class="product-badge new">Weihnachtsrabatt</span>
             {% endif %}
+        {% if card_product.available == false %}
+  <span class="product-badge new">Ausverkauft</span>
+{% endif %}
       
             <style>
               .product-badge.new {
