@@ -144,9 +144,14 @@
     },
     "content_for_index": [],
     "blocks": {
+      "11068332061543699368": {
+        "type": "shopify://apps/booster-page-speed-optimizer/blocks/app-embed/d920faf3-7c60-423a-9636-22618b5561b5",
+        "disabled": false,
+        "settings": {}
+      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "button_color": "#32ba3b",
           "secondary_color": "#ffffff",
@@ -157,11 +162,6 @@
           "button_vertical_position": "lowest",
           "greeting_message": "Unser Live-Chat-Kundenservice ist von Montag bis Freitag zwischen 7:30 und 17:00 Uhr für Sie da. Sie erhalten von einem Mitarbeiter innerhalb von 30 Minuten eine Antwort auf Ihre Fragen.\n\nWir freuen uns darauf, Ihnen weiterzuhelfen und Ihre Anliegen schnell zu klären!"
         }
-      },
-      "11068332061543699368": {
-        "type": "shopify://apps/booster-page-speed-optimizer/blocks/app-embed/d920faf3-7c60-423a-9636-22618b5561b5",
-        "disabled": false,
-        "settings": {}
       }
     },
     "color_schemes": {
