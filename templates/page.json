@@ -248,7 +248,6 @@
     },
     "kontakt_qyMADQ": {
       "type": "kontakt",
-      "disabled": true,
       "settings": {
         "slidertitel1": ""
       }
