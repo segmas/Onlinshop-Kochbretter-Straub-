@@ -42,7 +42,6 @@
     },
     "kontakt_qnHiV3": {
       "type": "kontakt",
-      "disabled": true,
       "settings": {
         "slidertitel1": ""
       }
