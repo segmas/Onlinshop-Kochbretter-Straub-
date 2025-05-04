@@ -373,7 +373,6 @@
     },
     "kontakt_iciRTg": {
       "type": "kontakt",
-      "disabled": true,
       "settings": {
         "slidertitel1": ""
       }
