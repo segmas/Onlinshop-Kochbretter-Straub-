@@ -38,7 +38,6 @@
         },
         "slider_blocks_WPLQJk": {
           "type": "slider_blocks",
-          "disabled": true,
           "settings": {
             "slider_img": "shopify://shop_images/chruistmas.webp",
             "slider_img_phone": "shopify://shop_images/chruistmas.webp",
