@@ -24,18 +24,6 @@
     "img_slider_Bn3EC8": {
       "type": "ImgSlider",
       "blocks": {
-        "slider_blocks_fKTtcr": {
-          "type": "slider_blocks",
-          "settings": {
-            "slider_img": "shopify://shop_images/markt4.jpg",
-            "slider_img_phone": "shopify://shop_images/Unbenannt_4c16f819-b9ea-49ad-82eb-4ff7b58f6b13.webp",
-            "slider_titel": "Weihnachtsmarkt 2025",
-            "slider_text": "",
-            "slider_text_phone": "",
-            "slider_url_link": "shopify://pages/messen-und-weihnachtsmarkt",
-            "slider_btn_text": "weiter Infos"
-          }
-        },
         "slider_blocks_PNkN3k": {
           "type": "slider_blocks",
           "settings": {
@@ -46,6 +34,18 @@
             "slider_text_phone": "",
             "slider_url_link": "https://konfigurator.kochbretterstraub.ch/",
             "slider_btn_text": "Jetzt selber gestalten"
+          }
+        },
+        "slider_blocks_fKTtcr": {
+          "type": "slider_blocks",
+          "settings": {
+            "slider_img": "shopify://shop_images/markt4.jpg",
+            "slider_img_phone": "shopify://shop_images/Unbenannt_4c16f819-b9ea-49ad-82eb-4ff7b58f6b13.webp",
+            "slider_titel": "Weihnachtsmarkt 2025",
+            "slider_text": "",
+            "slider_text_phone": "",
+            "slider_url_link": "shopify://pages/messen-und-weihnachtsmarkt",
+            "slider_btn_text": "weiter Infos"
           }
         },
         "slider_blocks_xYCagy": {
@@ -75,8 +75,8 @@
         }
       },
       "block_order": [
-        "slider_blocks_fKTtcr",
         "slider_blocks_PNkN3k",
+        "slider_blocks_fKTtcr",
         "slider_blocks_xYCagy",
         "slider_blocks_WPLQJk"
       ],
