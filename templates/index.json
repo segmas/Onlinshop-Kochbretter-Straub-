@@ -38,6 +38,7 @@
         },
         "slider_blocks_WPLQJk": {
           "type": "slider_blocks",
+          "disabled": true,
           "settings": {
             "slider_img": "shopify://shop_images/chruistmas.webp",
             "slider_img_phone": "shopify://shop_images/chruistmas.webp",
@@ -59,12 +60,25 @@
             "slider_url_link": "shopify://pages/gravuren",
             "slider_btn_text": "mehr erfahren"
           }
+        },
+        "slider_blocks_fKTtcr": {
+          "type": "slider_blocks",
+          "settings": {
+            "slider_img": "shopify://shop_images/markt4.jpg",
+            "slider_img_phone": "shopify://shop_images/Unbenannt_4c16f819-b9ea-49ad-82eb-4ff7b58f6b13.webp",
+            "slider_titel": "",
+            "slider_text": "",
+            "slider_text_phone": "",
+            "slider_url_link": "",
+            "slider_btn_text": ""
+          }
         }
       },
       "block_order": [
         "slider_blocks_PNkN3k",
         "slider_blocks_WPLQJk",
-        "slider_blocks_xYCagy"
+        "slider_blocks_xYCagy",
+        "slider_blocks_fKTtcr"
       ],
       "custom_css": [
         "#SliderTiteleins {left: 13rem;}",
@@ -269,7 +283,7 @@
         "PlaceHolderImgforMovie": "https://cdn.shopify.com/s/files/1/0759/8152/1196/files/VideoTitelBild.webp?v=1718173443",
         "MovieTitel": "Individuelles Kochbrett",
         "TitelFontSize": "3.1rem",
-        "MovieText": "Mit einem individuellen Schneidebrett begeistern Sie jeden! Ob ein <strong>spezieller Spruch</strong>, ein<strong> Firmenlogo</strong>, das <strong>Vereinswappen</strong> oder der <strong>Name des Geburtstagskindes </strong>– dieses personalisierte Geschenk ist ein echter Hingucker und eine wunderschöne Erinnerung.",
+        "MovieText": "Mit einem individuellen Schneidebrett begeistern Sie jeden! Ob ein spezieller Spruch, ein Firmenlogo, das Vereinswappen oder der Name des Geburtstagskindes – dieses personalisierte Geschenk ist ein echter Hingucker und eine wunderschöne Erinnerung.",
         "JetztSelberGestaltenText": "Jetzt selber gestalten",
         "JetztSelberGestaltenLink": "https://konfigurator.kochbretterstraub.ch/",
         "BackgroundColorMain": "#ffffff",
