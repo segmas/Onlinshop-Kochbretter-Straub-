@@ -24,6 +24,18 @@
     "img_slider_Bn3EC8": {
       "type": "ImgSlider",
       "blocks": {
+        "slider_blocks_xYCagy": {
+          "type": "slider_blocks",
+          "settings": {
+            "slider_img": "shopify://shop_images/IMG_9204_1.webp",
+            "slider_img_phone": "shopify://shop_images/Unbenannt1_1_3c57373a-6062-44d4-a96a-de64ff7301c4.webp",
+            "slider_titel": "Gravuren",
+            "slider_text": "",
+            "slider_text_phone": "",
+            "slider_url_link": "shopify://pages/gravuren",
+            "slider_btn_text": "mehr erfahren"
+          }
+        },
         "slider_blocks_PNkN3k": {
           "type": "slider_blocks",
           "settings": {
@@ -49,18 +61,6 @@
             "slider_btn_text": "mehr erfahren"
           }
         },
-        "slider_blocks_xYCagy": {
-          "type": "slider_blocks",
-          "settings": {
-            "slider_img": "shopify://shop_images/IMG_9204_1.webp",
-            "slider_img_phone": "shopify://shop_images/Unbenannt1_1_3c57373a-6062-44d4-a96a-de64ff7301c4.webp",
-            "slider_titel": "Gravuren",
-            "slider_text": "",
-            "slider_text_phone": "",
-            "slider_url_link": "shopify://pages/gravuren",
-            "slider_btn_text": "mehr erfahren"
-          }
-        },
         "slider_blocks_fKTtcr": {
           "type": "slider_blocks",
           "settings": {
@@ -75,9 +75,9 @@
         }
       },
       "block_order": [
+        "slider_blocks_xYCagy",
         "slider_blocks_PNkN3k",
         "slider_blocks_WPLQJk",
-        "slider_blocks_xYCagy",
         "slider_blocks_fKTtcr"
       ],
       "custom_css": [
