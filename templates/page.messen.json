@@ -31,8 +31,33 @@
     "messen_HQNgz4": {
       "type": "messen",
       "blocks": {
+        "text_Va7MUg": {
+          "type": "text",
+          "settings": {
+            "markttitel": "Weihnachtsmarkt 2025 Bischofszell 28.Nov - 30.Nov",
+            "markt-bilder": "shopify://shop_images/markt4_1_5615d558-3912-4b02-bb32-8a14de30e782.jpg",
+            "data1": "Freitag   28. November 2025 17:00 - 21:00 (ohne Gravuren)",
+            "data2": "Samstag 29. November 2025 11:00 - 21:00 (mit Gravuren)",
+            "data3": "Sonntag  30. November 2025 11:00 - 18:00 (mit Gravuren)",
+            "data4": "",
+            "description": ""
+          }
+        },
+        "text_iARG3H": {
+          "type": "text",
+          "settings": {
+            "markttitel": "Adventsmarkt Weinfelden 13. / 14. Dezember 2025",
+            "markt-bilder": "shopify://shop_images/Wein_hnachtsmarkt.jpg",
+            "data1": "Samstag 13.Dez 11.00 Uhr bis 21.00 Uhr",
+            "data2": "Sonntag 14.Dez 11.00 Uhr bis 18.00 Uhr",
+            "data3": "",
+            "data4": "",
+            "description": ""
+          }
+        },
         "text_UPakAN": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "markttitel": "Weihnachtsmarkt 2024 Bischofszell 29.Nov - 1.Dez",
             "markt-bilder": "shopify://shop_images/markt4_1_5615d558-3912-4b02-bb32-8a14de30e782.jpg",
@@ -45,6 +70,8 @@
         }
       },
       "block_order": [
+        "text_Va7MUg",
+        "text_iARG3H",
         "text_UPakAN"
       ],
       "settings": {
@@ -76,6 +103,7 @@
         "heading_JrhjAT",
         "text_er4zQR"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
