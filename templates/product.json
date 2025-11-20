@@ -211,6 +211,26 @@
       "settings": {
         "slidertitel1": ""
       }
+    },
+    "1763631395f8127991": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_eyBwtB": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_eyBwtB"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -218,6 +238,7 @@
     "image_with_text_qcCRE9",
     "holzarten_Vp3Eaa",
     "related-products",
-    "kontakt_48cQcB"
+    "kontakt_48cQcB",
+    "1763631395f8127991"
   ]
 }
