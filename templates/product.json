@@ -211,6 +211,12 @@
       "settings": {
         "slidertitel1": ""
       }
+    },
+    "1763625520b755ab65": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -218,6 +224,7 @@
     "image_with_text_qcCRE9",
     "holzarten_Vp3Eaa",
     "related-products",
-    "kontakt_48cQcB"
+    "kontakt_48cQcB",
+    "1763625520b755ab65"
   ]
 }
