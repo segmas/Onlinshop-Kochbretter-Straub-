@@ -24,6 +24,10 @@
           "type": "title",
           "settings": {}
         },
+        "judge_me_reviews_preview_badge_4Wziwk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -101,15 +105,12 @@
             "content": "<p>{{ product.metafields.custom.text_jedes_brett_ein_unika.value }}</p>",
             "page": ""
           }
-        },
-        "judge_me_reviews_preview_badge_4Wziwk": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
         }
       },
       "block_order": [
         "vendor",
         "title",
+        "judge_me_reviews_preview_badge_4Wziwk",
         "description",
         "custom_liquid_8frXC6",
         "price",
@@ -120,8 +121,7 @@
         "custom_liquid_Ujnedi",
         "icon_with_text_bzqqPm",
         "collapsible_tab_ncHMUe",
-        "collapsible_tab_iTW8mQ",
-        "judge_me_reviews_preview_badge_4Wziwk"
+        "collapsible_tab_iTW8mQ"
       ],
       "custom_css": [
         "h1 {fon-size: 2rem;}",
