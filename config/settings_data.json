@@ -149,15 +149,6 @@
         "disabled": false,
         "settings": {}
       },
-      "10830403595879607806": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-core/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": false,
-        "settings": {
-          "url_key": "REVIEWS.io",
-          "lang": "auto",
-          "enable_syndication": false
-        }
-      },
       "15316669992541710076": {
         "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
@@ -199,6 +190,15 @@
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
           "greeting_message": "Unser Live-Chat-Kundenservice ist von Montag bis Freitag zwischen 7:30 und 17:00 Uhr für Sie da. Sie erhalten von einem Mitarbeiter innerhalb von 30 Minuten eine Antwort auf Ihre Fragen.\n\nWir freuen uns darauf, Ihnen weiterzuhelfen und Ihre Anliegen schnell zu klären!"
+        }
+      },
+      "10830403595879607806": {
+        "type": "shopify://apps/reviews-io/blocks/reviewsio-core/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": false,
+        "settings": {
+          "url_key": "REVIEWS.io",
+          "lang": "auto",
+          "enable_syndication": true
         }
       }
     },
