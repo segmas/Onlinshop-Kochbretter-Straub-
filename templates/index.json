@@ -26,6 +26,7 @@
       "blocks": {
         "slider_blocks_PNkN3k": {
           "type": "slider_blocks",
+          "disabled": true,
           "settings": {
             "slider_img": "shopify://shop_images/IMG_4201.webp",
             "slider_img_phone": "shopify://shop_images/Unbenannt1_2_8ef35444-1131-4670-8c3b-a956160657bc.webp",
